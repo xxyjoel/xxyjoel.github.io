@@ -1,7 +1,5 @@
 - name: AIM Consulting - Swedish Medical Group (Role: Engagement Manager)
   descr: "Assess existing system infrastructure and manage one (1) development resource focused on building net new reporting solutions for the stroke program at Swedish medical group."
-  image: pong.png
-  github: https://github.com/renyuanz/leonids
 
 - name: AIM Consulting - Bluetooth (Role: Data Strategist)
   descr: "Assess current state of data governance procedures. Develop strategy to improve data quality across the organization."
