@@ -1,16 +1,36 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
-- name: Google
-  link: http://www.google.com/
-  date: July 2017 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
-  job: Programming Internship
+- name: AIM Consulting
+  link: http://www.aimconsulting.com/
+  date: Aug 2018 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  job: Sr. Consultant
 
-- name: Facebook
+- name: Funko 
+  link: https://www.funko.com/
+  date: July 2017 - Aug 2018
+  job: Analyst 
+
+- name: Impact Group
   link: http://www.facebook.com/
-  date: May 2014 - July 2017
-  job: Web Assistant
+  date: June 2016 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  job: Founder  
 
-- name: SAP
-  link: https://www.sap.com/
-  date: 2010 - 2014
-  job: Software Developer
+- name: Convoy
+  link: http://www.convoy.com/
+  date: May 2015 - June 2016
+  job: Growth  
+  
+- name: InstaFreight 
+  link: 
+  date: Oct 2014 - May 2015
+  job: Founder
+  
+- name: SoftTail Spirits
+  link: 
+  date: Nov 2011 - Oct 2014
+  job: Marketing Analyst 
+  
+- name: Pac-Modal Transportation
+  link: http://www.pac-modal.com/
+  date: Nov 2010 - Nov 2013
+  job: Ops Manager / Pricing Analyst
