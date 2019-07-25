@@ -8,8 +8,7 @@
 
 - name: AIM Consulting - Pursuit (Role: Data Scientist)
   descr: "Developed and productionalized recommendation engine’s initial build based on collaborative filtering via alternating least squares in databricks environment. Source repo linked."
-  source credit 1: https://nbviewer.jupyter.org/github/jmsteinw/Notebooks/blob/master/RecEngine_NB.ipynb
-  source credit 2: https://github.com/benfred/implicit 
+  github: https://github.com/jupyter/nbviewer
 
 - name: AIM Consulting - Funko (Role: Project Lead)
   descr: "Led the design and development of marketing strategy & reports for C-level executives."
