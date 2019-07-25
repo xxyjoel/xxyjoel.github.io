@@ -1,17 +1,17 @@
-- name: AIM Consulting: Swedish Medical Group (Role: Engagement Manager)
+- name: AIM Consulting, Swedish Medical Group (Role: Engagement Manager)
   descr: "Assess existing system infrastructure and manage one (1) development resource focused on building net new reporting solutions for the stroke program at Swedish medical group."
 
-- name: AIM Consulting: Bluetooth (Role: Data Strategist)
+- name: AIM Consulting, Bluetooth (Role: Data Strategist)
   descr: "Assess current state of data governance procedures. Develop strategy to improve data quality across the organization."
 
-- name: AIM Consulting: Pursuit (Role: Data Scientist)
+- name: AIM Consulting, Pursuit (Role: Data Scientist)
   descr: "Developed and productionalized recommendation engine’s initial build based on collaborative filtering via alternating least squares in databricks environment. Source repo linked."
   github: https://github.com/jupyter/nbviewer
 
-- name: AIM Consulting: Funko (Role: Project Lead)
+- name: AIM Consulting, Funko (Role: Project Lead)
   descr: "Led the design and development of marketing strategy & reports for C-level executives."
   
-- name: AIM Consulting: Lululemon (Roles: Project Manager & BI Engineer)
+- name: AIM Consulting, Lululemon (Roles: Project Manager & BI Engineer)
   descr: "Designed, architected and managed development for 10 global applications supporting the Distribution Logistics and Trade team."
   
   
