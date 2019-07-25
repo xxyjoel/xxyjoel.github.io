@@ -1,17 +1,24 @@
-- name: AIM Consulting, Swedish Medical Group (Engagement Manager)
-  descr: "Assess existing system infrastructure and manage one (1) development resource focused on building net new reporting solutions for the stroke program at Swedish medical group."
-
-- name: AIM Consulting, Bluetooth (Data Strategist)
-  descr: "Assess current state of data governance procedures. Develop strategy to improve data quality across the organization."
-
-- name: AIM Consulting, Pursuit (Data Scientist)
-  descr: "Developed and productionalized recommendation engine’s initial build based on collaborative filtering via alternating least squares in databricks environment. Source repo linked."
-  github: https://github.com/jupyter/nbviewer
-
-- name: AIM Consulting, Funko (Project Lead)
-  descr: "Led the design and development of marketing strategy & reports for C-level executives."
+- name: rfm  
+  descr: "create scoring mechanism via purchasing behavior to group customers into actionable cohorts."
+  github: https://gist.github.com/xxyjoel/850aca8d9475d95168848fd624fa0835
   
-- name: AIM Consulting, Lululemon (Project Manager & BI Engineer)
-  descr: "Designed, architected and managed development for 10 global applications supporting the Distribution Logistics and Trade team."
+- name: google trends
+  descr: "pull google trends data and format in standard R dataframe. Isolate breakout trends, search terms and trend score values for easy processing."
+  github: https://gist.github.com/xxyjoel/cdc5daf0249384450cc62401b05109c6
   
+- name: ohlc manipulation
+  descr: "basic functions for manipulating stock prices. data is in standard dataframe format"
+  github: https://gist.github.com/xxyjoel/2245a26951bac0fc0846af02b465b2e8
+
+- name: gender mapping
+  descr: "infer gender based on name."
+  github: https://gist.github.com/xxyjoel/10deca646bc875792152c4d882236200
+  
+- name: arima 
+  descr: "pull data from target sql db, perform forecast (pdq values hardcoded) and writeback forecasted values to target db."
+  github: https://gist.github.com/xxyjoel/9d0440d5f9444ad3a4f6cedbf8d37ae8
+  
+- name: xgboost  
+  descr: "binary classifier."
+  github: https://gist.github.com/xxyjoel/45e1622161a43b0d1a87ac2360f6cad3
   
