@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: Motivation, GitHub, Java, HTML/CSS, Docker, Python
-percentage: 100, 65, 70, 60, 60, 55
+aspects: Python, R, SQL, DAX/MDX, PowerBI, Git
+percentage: 65, 55, 50, 75, 90, 80
