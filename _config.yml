@@ -34,7 +34,7 @@ kramdown:
 #
 owner:
   name: Joel Proctor
-  avatar: favicon.png
+  avatar: #favicon.png
   job: "Catching Black Swans @ AIM"
   bio: "Personal projects and whimsical thoughts."
   email: joel.proctor@outlook.com
