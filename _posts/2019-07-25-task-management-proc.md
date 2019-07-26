@@ -6,11 +6,9 @@ categories: [musings]
 comments: true
 ---
 # Task Management Procs:
-##### Goal: outline tools and methods used for personal task management 
+## Overview / Assessment of Procedure:
 
-### Overview / Assessment of Procedure:
-
-*An effective task management procedure must:* 
+*An effective task management procedure must* 
 * collect information and tasks from more than 1 environment
 * provide clear prioritization ability 
 * capture any & all requests and 
@@ -24,34 +22,34 @@ Capturing all requests is required to maintain competence. While not all tasks m
 
 While the current procedure handles 1 and 3 well, long term prioritization ability is lacking. Current daily focus with a loose long-term prioritization grants the user peace of mind – in knowing all tasks are captured and dates have been assigned – however, I foresee this falling apart when too many requests (pertaining to many projects) exist. 
 
-*Potential solutions:* 
+####Potential solutions
 * Ability to group tasks by type
   * This would require a new digital task management tool as google tasks has some serious limitations (e.g. no subtask date assignment or prioritization)
 * Increased usage and reliance on project management software
   * This allows the same 
 
-*Additional thoughts around interaction:* 
+####Additional thoughts around interaction
 It is ideal that each application has 1 central repository for anything that is “task” related as not to confuse the user between applications. That is, if application A has 2 locations where tasks / lists are hidden, B has 5, C has 1, it is assumed that the probability of cohesion between the lists would be minimal. Thus, a 1:1 rule (1 list per application) is applied. 
 
-### Notebook 
+### Notebook: 
 This is the “central” task management tool. It is interacted with daily and contains tasks that should be completed within 24 hours. Additionally, notes and thoughts pertaining to tasks are included here. It is dated and paginated for reference, should it be required. 
 
-#####Symbols used 
+####Symbols used 
 * A square box denotes a task to be completed in 24 hours
 * A square box with a checkmark denotes a completed task
 * A square box with a circle around it denotes a HIGH PRIORITY task to be completed in 24 hours 
 * Items with a strikethrough line denote a task not completed, added back to digital task management, or added to current day’s list
 
-#####Additional categorization  
+####Additional categorization  
 * Content with rectangles around written items denote subjects. 
 
-*Common subjects include:*
+####Common subjects include
 * Tasks
 * Personal thoughts & solutioning 
 * Meeting notes 
 * Date / time
 
-*Exceptions:*
+*Exceptions*
 * IF both the left and right pages are filled AND tasks still remain open THEN cross out and either add back to digital task management application OR add to current task management page 
 
 
@@ -59,17 +57,17 @@ This is the “central” task management tool. It is interacted with daily and 
 #### Google Tasks
 This task management application is used for all future state task prioritization requirements. All individual tasks listed here should be small enough such that they can be completed within a 24-hour timeframe as they will eventually be added to the written notebook.
 
-##### List types & details: 
-*Tasks List*
+##### List types & details 
+######Tasks List
 * For digitally tracking and prioritizing future tasks
 * Tasks are created and prioritized based on date and time 
 * Tasks can be added to be completed at any future date
   * New items that are to be completed same day should be added to the notebook 
 
-*Exceptions:* 
+*Exceptions* 
 * If the notebook is not available and the task(s) must be completed same day, you can add an item to the gtasks list 
 
-*Backlog List*
+######Backlog List
 * Projects / ideas I would like to do but do not have a specific completion timeframe outlined 
 * Items are drawn from this bucket when there is “nothing left” on the standard task list. Purpose being to prevent stagnation.
 * Items that have had a date but have been pushed back / rescheduled more than 3x are also listed here
@@ -123,21 +121,21 @@ Work email account aggregation tool. As a consultant I often have 3+ work accoun
 
 ### Day to day procedure:
 ##### Determining which tasks to select for today 
-1. Review current unfinished task in the notebook from the prior day (if applicable). 
-  a. IF the task should move to backlog (gtasks)
-    i. Copy the item from paper to gtasks with appropriate priority date 
-    ii.	See “Backlogging and Rescheduling Tasks” below on how to determine when to reschedule a task, and when to backlog it
-  b. IF the task should move to today’s current task list. 
-    i. Cross out the previous days task
-    ii. Rewrite the same task on todays task list 
-2. Review unaddressed outlook and gmail items 
-  a. Add starred / flagged items to gtask list
-3. Review gtasks for items selected for current day 
-  a. IF tasks listed for today’s date in gtasks is still a top priority, add it to today’s task list (in notebook)
-  b. IF task listed for today’s data in gtasks is not a top priority, reprioritize. Actions to be taken can include:
-    i. Move to another date / time
-    ii. Move to backlog
-    iii. Delete
+* Review current unfinished task in the notebook from the prior day (if applicable). 
+ * IF the task should move to backlog (gtasks)
+  * Copy the item from paper to gtasks with appropriate priority date 
+  * See “Backlogging and Rescheduling Tasks” below on how to determine when to reschedule a task, and when to backlog it
+ * IF the task should move to today’s current task list. 
+  * Cross out the previous days task
+  * Rewrite the same task on todays task list 
+* Review unaddressed outlook and gmail items 
+ * Add starred / flagged items to gtask list
+* Review gtasks for items selected for current day 
+ * IF tasks listed for today’s date in gtasks is still a top priority, add it to today’s task list (in notebook)
+ * IF task listed for today’s data in gtasks is not a top priority, reprioritize. Actions to be taken can include:
+  * Move to another date / time
+  * Move to backlog
+  * Delete
 
 ##### Completing a task
 * Check off the task in the notebook when complete 
