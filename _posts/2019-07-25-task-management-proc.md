@@ -122,20 +122,20 @@ Work email account aggregation tool. As a consultant I often have 3+ work accoun
 ### Day to day procedure:
 ##### Determining which tasks to select for today 
 * Review current unfinished task in the notebook from the prior day (if applicable). 
- * IF the task should move to backlog (gtasks)
-  * Copy the item from paper to gtasks with appropriate priority date 
-  * See “Backlogging and Rescheduling Tasks” below on how to determine when to reschedule a task, and when to backlog it
- * IF the task should move to today’s current task list. 
-  * Cross out the previous days task
-  * Rewrite the same task on todays task list
+  * IF the task should move to backlog (gtasks)
+    * Copy the item from paper to gtasks with appropriate priority date 
+    * See “Backlogging and Rescheduling Tasks” below on how to determine when to reschedule a task, and when to backlog it
+  * IF the task should move to today’s current task list. 
+    * Cross out the previous days task
+    * Rewrite the same task on todays task list
 * Review unaddressed outlook and gmail items 
- * Add starred / flagged items to gtask list
+  * Add starred / flagged items to gtask list
 * Review gtasks for items selected for current day 
- * IF tasks listed for today’s date in gtasks is still a top priority, add it to today’s task list (in notebook)
- * IF task listed for today’s data in gtasks is not a top priority, reprioritize. Actions to be taken can include:
-  * Move to another date / time
-  * Move to backlog
-  * Delete
+  * IF tasks listed for today’s date in gtasks is still a top priority, add it to today’s task list (in notebook)
+  * IF task listed for today’s data in gtasks is not a top priority, reprioritize. Actions to be taken can include:
+    * Move to another date / time
+    * Move to backlog
+    * Delete
 
 ##### Completing a task
 * Check off the task in the notebook when complete 
