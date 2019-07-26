@@ -33,3 +33,8 @@ TODO
 - most valuable skills (not roles)
 - forecast skill valuation (to make case for where you should be spending your time 
 - how companies can leverage innovation labs (and view it as a cost saving revenue generation machine)
+- https://github.com/indeedeng/imhotep
+- https://opensource.indeedeng.io/
+- https://jobs.github.com/api
+    - determine how to parse skills from text blob 
+    - possible to hardcode list of all tools and technologies and search for key words
