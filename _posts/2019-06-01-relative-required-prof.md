@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Verticals in Data & Analytics"
-excerpt: "Building and innovation lab and measuring the relative value of a skill."
+excerpt: "Building an innovation lab and measuring relative value of a skill."
 categories: [musings]
 comments: true
 ---
