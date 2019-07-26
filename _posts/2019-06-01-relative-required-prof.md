@@ -6,6 +6,7 @@ comments: true
 ---
 
 # Verticals in Data & Analytics 
+
 <strong> Background </strong>
 Given the Data & Analytics (DA) field is so new, I wanted to build a framework that could (1) improve my narrative (2) understand skill & tool requirements to master each DA vertical and (3) decide, based on my current skill sets and interests, where I can add the most value. 
 
