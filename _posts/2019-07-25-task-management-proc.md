@@ -4,6 +4,8 @@ title: My Task Management Procedure
 excerpt: "How I manage to keep my life (and brain) organized so I can focus on what matters."
 categories: [musings]
 comments: true
+image:
+  feature: https://www.lucidchart.com/invitations/accept/b8546916-e81f-45b0-bb46-1bf183aad681
 ---
 # Task Management Procs:
 ## Overview / Assessment of Procedure:
@@ -20,16 +22,10 @@ Clear prioritization is required to narrow scope and increase focus potential. T
 
 Capturing all requests is required to maintain competence. While not all tasks must be completed by the individual, the individual must know when resources are constrained and tasks either (1) cannot be completed or (2) require additional resources. 
 
-While the current procedure handles 1 and 3 well, long term prioritization ability is lacking. Current daily focus with a loose long-term prioritization grants the user peace of mind – in knowing all tasks are captured and dates have been assigned – however, I foresee this falling apart when too many requests (pertaining to many projects) exist. 
-
-<strong>Potential solutions</strong>
-* Ability to group tasks by type
-  * This would require a new digital task management tool as google tasks has some serious limitations (e.g. no subtask date assignment or prioritization)
-* Increased usage and reliance on project management software
-  * This allows the same 
-
 <strong>Additional thoughts around interaction</strong>
 It is ideal that each application has 1 central repository for anything that is “task” related as not to confuse the user between applications. That is, if application A has 2 locations where tasks / lists are hidden, B has 5, C has 1, it is assumed that the probability of cohesion between the lists would be minimal. Thus, a 1:1 rule (1 list per application) is applied. 
+
+![Procedure Image](https://www.lucidchart.com/invitations/accept/b8546916-e81f-45b0-bb46-1bf183aad681)
 
 ### Notebook: 
 This is the “central” task management tool. It is interacted with daily and contains tasks that should be completed within 24 hours. Additionally, notes and thoughts pertaining to tasks are included here. It is dated and paginated for reference, should it be required. 
@@ -153,4 +149,14 @@ Work email account aggregation tool. As a consultant I often have 3+ work accoun
   * Reprioritize the task by assigning a new date 
 * IF a task has been rescheduled more than twice, move item to backlog 
 
+## Conclusion:
+This procedure is optimum for persons who prefer minimal upkeep and maximum flexibility. While a specific and current daily focus with loose long-term prioritization grants the user peace of mind – in knowing all tasks are captured and priorities have been assigned – its shortcomings are apparent when too many requests (pertaining to many projects) exist. 
+
+<strong>Potential solutions to the shortcomings of this procedure</strong>
+* Ability to group tasks by type
+  * This would require a new digital task management tool as google tasks have some serious limitations (e.g. no subtask date assignment, no tagging, etc.)
+* Increased usage and reliance on project management software
+  * by capturing detailed priorities within your prefered PM software, you can effectively and effeciently rely on this procedure for reminders, removing the requirement to duplicate detailed information 
+  
+  
 
