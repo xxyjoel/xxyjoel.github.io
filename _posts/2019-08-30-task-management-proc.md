@@ -50,8 +50,8 @@ This is the “central” task management tool. It is interacted with daily and 
 <strong>Exceptions</strong>
 * IF both the left and right pages are filled AND tasks still remain open THEN cross out and either add back to digital task management application OR add to current task management page 
 
-![Notebook sample image 4](https://github.com/xxyjoel/xxyjoel.github.io/blob/master/img/notebook-sample4.JPG)
-![Notebook sample image 3](https://github.com/xxyjoel/xxyjoel.github.io/blob/master/img/notebook-sample3.JPG)
+![Notebook sample image 4](/img/notebook-sample4.JPG)
+![Notebook sample image 3](/img/notebook-sample3.JPG)
 
 ### Digital Records
 #### Google Tasks
