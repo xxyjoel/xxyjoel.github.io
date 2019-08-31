@@ -6,6 +6,9 @@ categories: [code]
 modified: 2014-09-14
 comments: true
 ---
+## overview 
+Revenue and client quantity distributions are rarely the same. This scoring mechanism seeks to normalize customer behavior by assigning specific actions to newly labeled cohorts.  
+
 
 ```r
 # REQUIRED PACKAGES
