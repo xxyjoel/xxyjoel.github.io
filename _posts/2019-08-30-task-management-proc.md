@@ -5,9 +5,9 @@ excerpt: "How I manage to keep my life (and brain) organized so I can focus on w
 categories: [musings]
 comments: true
 image:
-  feature: https://github.com/xxyjoel/xxyjoel.github.io/blob/master/img/task%20management%20proc-application%20view%20.png
-  feature: https://github.com/xxyjoel/xxyjoel.github.io/blob/master/img/notebook-sample3.JPG
-  feature: https://github.com/xxyjoel/xxyjoel.github.io/blob/master/img/notebook-sample4.JPG
+  feature: /img/task%20management%20proc-application%20view%20.png
+  feature: /img/notebook-sample3.JPG
+  feature: /img/notebook-sample4.JPG
 ---
 # Task Management Procs:
 ## Overview / Assessment of Procedure:
@@ -27,7 +27,7 @@ Capturing all requests is required to maintain competence. While not all tasks m
 <strong>Additional thoughts around interaction</strong>
 It is ideal that each application has 1 central repository for anything that is “task” related as not to confuse the user between applications. That is, if application A has 2 locations where tasks / lists are hidden, B has 5, C has 1, it is assumed that the probability of cohesion between the lists would be minimal. Thus, a 1:1 rule (1 list per application) is applied. 
 
-![Procedure Image](<img src="{{ site.baseurl }}/blob/master/img/task%20management%20proc-application%20view%20.png">)
+![Procedure Image](/img/task%20management%20proc-application%20view%20.png)
 
 ### Notebook: 
 This is the “central” task management tool. It is interacted with daily and contains tasks that should be completed within 24 hours. Additionally, notes and thoughts pertaining to tasks are included here. It is dated and paginated for reference, should it be required. 
