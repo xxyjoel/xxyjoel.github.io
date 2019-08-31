@@ -6,7 +6,8 @@
 title: Joel Proctor
 email: joel.proctor@outlook.com
 description: Personal projects and cool stuff. 
-url: /xxyjoel.github.io
+base url: xxyjoel.github.io
+url: ""
 keywords: ["blog", "python", "R", "eda"]
 
 #
