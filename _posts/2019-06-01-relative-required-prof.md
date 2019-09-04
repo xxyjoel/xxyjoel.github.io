@@ -4,13 +4,10 @@ title:  "Verticals in Data & Analytics"
 excerpt: "Building an innovation lab and measuring relative value of a skill."
 categories: [musings]
 comments: true
-images: 
+image: 
     feature: /img/d&a-verticals.png
-images: 
-    feature: /img/d&a-verticals-viz.png
-images:     
+    feature: /img/d&a-verticals-viz.png    
     feature: /img/d&a-verticals-infra.png
-images: 
     feature: /img/d&a-verticals-decision.png
     
 ---
