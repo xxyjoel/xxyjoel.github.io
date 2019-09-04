@@ -6,8 +6,11 @@ categories: [musings]
 comments: true
 images: 
     feature: /img/d&a-verticals.png
+images: 
     feature: /img/d&a-verticals-viz.png
+images:     
     feature: /img/d&a-verticals-infra.png
+images: 
     feature: /img/d&a-verticals-decision.png
     
 ---
@@ -21,9 +24,9 @@ Given the Data & Analytics (DA) field is so new, I wanted to build a framework t
 Initail assumptions
 - Three specialization (verticals) exist: (1) decision - akin to advanced analytics work - (2) infrastructure - architecture, systems & networking - and (3) visualizaiton, data modeling, report development and requirements gathering.  
 ![verticals](/img/d&a-verticals.png)
-![verticals](/img/d&a-verticals-decision.png)
-![verticals](/img/d&a-verticals-infra.png)
-![verticals](/img/d&a-verticals-viz.png)
+![decision](/img/d&a-verticals-decision.png)
+![infra](/img/d&a-verticals-infra.png)
+![viz](/img/d&a-verticals-viz.png)
 <br>
 To start, I pulled data on DA roles of all levels to determine which skills and tools were required. While many roles require the same tool or skill (a business analyst and data scientist using python for example) they do not always require the same skill level. A 'required proficiency' value was created to differentiate. Admittedly this took a bit of finesse, but based on the variance (or consistency) of a specifc role requiring the same skill, you could infer the skills' importance or 'required proficiency'. 
 <br>
