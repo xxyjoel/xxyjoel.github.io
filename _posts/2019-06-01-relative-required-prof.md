@@ -20,6 +20,7 @@ Given the Data & Analytics (DA) field is so new, I wanted to build a framework t
 <br>
 Initail assumptions
 - Three specialization (verticals) exist: (1) decision - akin to advanced analytics work - (2) infrastructure - architecture, systems & networking - and (3) visualizaiton, data modeling, report development and requirements gathering.  
+<br>
 ![verticals](/img/d&a-verticals.png)
 ![decision](/img/d&a-verticals-decision.png)
 ![infra](/img/d&a-verticals-infra.png)
