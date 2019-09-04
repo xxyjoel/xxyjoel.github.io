@@ -5,10 +5,10 @@ excerpt: "Building an innovation lab and measuring relative value of a skill."
 categories: [musings]
 comments: true
 image: 
-    feature: /img/d&a-verticals.png
-    feature: /img/d&a-verticals-viz.png    
-    feature: /img/d&a-verticals-infra.png
-    feature: /img/d&a-verticals-decision.png
+    feature: /img/d&a-verticals.PNG
+    feature: /img/d&a-verticals-viz.PNG    
+    feature: /img/d&a-verticals-infra.PNG
+    feature: /img/d&a-verticals-decision.PNG
     
 ---
 
@@ -21,10 +21,10 @@ Given the Data & Analytics (DA) field is so new, I wanted to build a framework t
 Initail assumptions
 - Three specialization (verticals) exist: (1) decision - akin to advanced analytics work - (2) infrastructure - architecture, systems & networking - and (3) visualizaiton, data modeling, report development and requirements gathering.  
 <br>
-![verticals](/img/d&a-verticals.png)
-![decision](/img/d&a-verticals-decision.png)
-![infra](/img/d&a-verticals-infra.png)
-![viz](/img/d&a-verticals-viz.png)
+![verticals](/img/d&a-verticals.PNG)
+![decision](/img/d&a-verticals-decision.PNG)
+![infra](/img/d&a-verticals-infra.PNG)
+![viz](/img/d&a-verticals-viz.PNG)
 <br>
 To start, I pulled data on DA roles of all levels to determine which skills and tools were required. While many roles require the same tool or skill (a business analyst and data scientist using python for example) they do not always require the same skill level. A 'required proficiency' value was created to differentiate. Admittedly this took a bit of finesse, but based on the variance (or consistency) of a specifc role requiring the same skill, you could infer the skills' importance or 'required proficiency'. 
 <br>
