@@ -26,7 +26,7 @@ Initail assumptions
 ![infra](/img/d&a-verticals-infra.PNG)
 ![viz](/img/d&a-verticals-viz.PNG)
 <br>
-To start, I pulled data on DA roles of all levels to determine which skills and tools were required. While many roles require the same tool or skill (a business analyst and data scientist using python for example) they do not always require the same skill level. A 'required proficiency' value was created to differentiate. Admittedly this took a bit of finesse, but based on the variance (or consistency) of a specifc role requiring the same skill, you could infer the skills' importance or 'required proficiency'. 
+I pulled data on DA roles of all levels to determine which skills and tools were required. While many roles require the same tool or skill (a business analyst and data scientist using python for example) they do not always require the same skill level. A 'required proficiency' value was created to differentiate. Admittedly this took a bit of finesse, but based on the variance (or consistency) of a specifc role requiring the same skill, you could infer the skills' importance or 'required proficiency'. 
 <br>
 <br>
 [instert role & skill matrix]<br>
@@ -42,7 +42,7 @@ To add to the complexity, we may run into an exception where a BA role has refer
 <br>
 <br>
 TODO
-- how my skill sets compare 
+- how my skill sets compare
 - most valuable skills (not roles)
 - forecast skill valuation (to make case for where you should be spending your time 
 - how companies can leverage innovation labs (and view it as a cost saving revenue generation machine)
