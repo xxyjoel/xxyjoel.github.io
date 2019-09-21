@@ -1,0 +1,71 @@
+---
+layout: post
+title: automating eda in python
+excerpt: "reducing time required to generate metrics used to formulate hypothesis prior to rigorous testing and modeling"
+categories: [eda, theory, analytics]
+comments: true
+---
+## work in progress
+
+**Whats the purpose of EDA?** EDA or exploratory data analysis provides the analyst or scientist with alternate prospectives used for forming hypothesis. It is generally the first step in determing how to approach a particular problem. 
+
+The theory is that, much like Snowflake is able to a categorize data for optimum storing, we should be able to categorize and profile data, applingy best fit summary statistics to automate insights discovery. 
+
+We are going to focus on the following metrics:
+* data quality (null and other missing values) 
+* frequency distributions 
+* 
+
+Contraints
+* this method will only take one table 
+* the table must include the data types listed below (i.e. only strucutred data) 
+* when non-null objects are present, how do you determine what to convert them into
+
+### the data 
+**Defining our data categories**
+* structured 
+  * categorical 
+    * nominal - defined as a simple naming system; this can include numbers (e.g. user IDs)
+    * ordinal - relative position has meaning to us (e.g. position in company, rank in competition) 
+  * quantitative 
+    * interval - data measured along a scale with equidistant positioning 
+    * ratio - true zero point exists
+* unstructured
+
+**table categories**
+  * time series = group 1
+
+**column categories**
+  * int, float = data type group a
+  * complex = data type group b
+  * string, object = data type group c
+  * bool = data type group d
+  * null, blank, na, etc = group f
+
+### suggested procedure 
+* input data & format to pandas df 
+* shape of data (rows & columns0 
+* column names & data types 
+* total unique items per column 
+* frequency distribution by column 
+* distribution of quantity of ocurrence by unique item
+  * note: if the ratio of unique items to row total is too low, the visual may become unhelpful
+* correlation coefficients
+* bivariate distrubiton plots
+* missing value analysis 
+* outlier detection 
+  * boxplots generated per column for groups [???] 
+  * note: we will repeat prior analysis if outliers discovered are significant
+* missing value treatments
+* multivariate factor and cluster analysis 
+
+### the code
+
+
+
+Future iterations 
+* this currently only looks at one table at a time which poses its own limitations... further iterations should be able to manage more / different data
+* introduce a contraint on the distribution of quantity of ocurrence by unique item by ratio of unique items to total rows 
+* include rationale and purpose for each visual included in the output
+* automation of eda for unstructured data sets 
+
