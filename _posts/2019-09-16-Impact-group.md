@@ -28,10 +28,9 @@ Currently we are transitioning IMPACT Group into an online portfolio marketplace
 * **Existing business models** include diversified product specialists (life insurance, annuity, etc.), traditional wealth managers (EdwardJones, Vanguard, Charles Schwab, etc.) independent wealth advisors and boutique finances houses.
 <br>
 *	**New business models** include robo-advisors, customized ETFs and third-party investment tool platforms
-
 <br>
 
-*	**Robo advisors, while growing quickly (65% YoY), the top 11 Robo advisors still only make up $19B AUM or 0.1% of the $33 trillion investable US assets [Deloitte, Corporate Insight, 2014]
+*	**Robo advisors**, while growing quickly (65% YoY), the top 11 Robo advisors still only make up $19B AUM or 0.1% of the $33 trillion investable US assets [Deloitte, Corporate Insight, 2014]
 <br>
 
 * **Portfolio overlap is rampant -** Vanguard owns > 5% float in 98.2% of all US securities (FIGURE 2) 
