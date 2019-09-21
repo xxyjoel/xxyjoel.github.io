@@ -28,7 +28,7 @@ Currently we are transitioning IMPACT Group into an online portfolio marketplace
 * **Existing business models** include diversified product specialists (life insurance, annuity, etc.), traditional wealth managers (EdwardJones, Vanguard, Charles Schwab, etc.) independent wealth advisors and boutique finances houses.
 <br>
 *	**New business models** include robo-advisors, customized ETFs and third-party investment tool platforms
-<br>
+<br>  
 
 *	**Robo advisors**, while growing quickly (65% YoY), the top 11 Robo advisors still only make up $19B AUM or 0.1% of the $33 trillion investable US assets [Deloitte, Corporate Insight, 2014]
 <br>
@@ -50,13 +50,13 @@ Currently we are transitioning IMPACT Group into an online portfolio marketplace
   * “Path of least resistance” is to (1) put down active management styles (majority of market) by marketing against performance (2) reduce fees (3) follow the rest of the market to insure, not optimum returns, but that your competition is not outperforming you. Much like the airplane industry. 
 <br>
 
-* US Investible assets value: $33 Trillion [Deloitte, Corporate Insight, 2014]
+* **US Investible assets value:** $33 Trillion [Deloitte, Corporate Insight, 2014]
 
-* Total US household net worth: $92.8 Trillion [source]
+* **Total US household net worth:** $92.8 Trillion [source]
 
-* US Equity market value: $30 Trillion [source]
+* **US Equity market value:** $30 Trillion [source]
 
-* Global ETF asset value: $4.569 Trillion [source]
+* **Global ETF asset value:** $4.569 Trillion [source]
 <br>
 
 ## Model development takeaways & factoids:
@@ -66,14 +66,13 @@ Currently we are transitioning IMPACT Group into an online portfolio marketplace
 * **Measuring your model (or portfolio manager’s) performance is _really_ hard –** if I were to tell you to pick manager, manager A who returned 12% over the last year, manager B who returned 35%, who would you pick? What If I told you A returned ~0.75% a month whereas B was in the red 15%  for eleven months out of the year and made it all back in the twelfth? Has your opinion changed? 
   * This is the tip of the iceberg. Actively managed models need to look at slippage, relative trade performance to ensure returns per trade are performing as expected, optimum position sizes, and more.
 <br>
+<br>
 
 * **Broker APIs are terrible outdated –** there are services which range in cost from a percentage of aum to 40k a year + a percentage of aum. I am still in the process of finding the right partner. 
   * Currently we connect directly to the interactive brokers api via our own api containerized and hosted on gcp 
 <br>
-<br>
 
 Like most endeavors, you end up discovering more questions than you do answers. Some of the most difficult problems we solved had nothing to do models… it had to do with measuring success: How do you determine where to generate a buy or a sell signal? How do you determine if the buy signal was good or bad? What if it was neither? How do you improve your buy signal? How much can you improve your buy signal? 
-<br>
 <br>
 
 If you follow this line of reasoning, you come to the conclusion that the most profitable model – the one that can capture the most potential profit – is the one that trades the most frequently. That said, based on client and advisor feedback, the right model for the job does not always need to be the one that is the most profitable… 
