@@ -14,15 +14,15 @@ So that we have something to compare against, I want to breakdown the current �
 * Player matchup – this is a simple star metric (1-5) that is determined by the players relative projected points, compared to other positions. (This is an assumption and needs to be tested. Look at projected points to star ratings. If inverse correlation or no correlation exist, then reject hypothesis and accept null). 
 <br>
 <br>
-To make the effort more attractive, intuition tells us workload would be easier to predict than completion rates – rush yards, completed passes, touch downs, etc – which is the current basis for projected player scores. 
+  To make the effort more attractive, intuition tells us workload would be easier to predict than completion rates – rush yards, completed passes, touch downs, etc – which is the current basis for projected player scores. 
 <br>
 <br>
-Potential factors, not currently included in projections, at play in determining estimated player workload:
+  Potential factors, not currently included in projections, at play in determining estimated player workload:
 * Weather – If a pass-catcher or a kicker, weather will likely adversely affect completion rates and cause in increase in run plays reducing total workload. 
 * Opposing defense – Good corners will box out star players, centers prevent runs, etc. 
 * Offensive line – They create runs, prevent sacks, and more; often overlooked, I am of the belief offensive lines are critical to both run and pass play success (or failure…think McCaffery week 2…). They create openings for running backs and give generous time to the quarterback. 
 <br>
-It is inherently difficult to measure much of their performance, and an entire analysis could be done on team performance as a result of the o-line. 
+  It is inherently difficult to measure much of their performance, and an entire analysis could be done on team performance as a result of the o-line. 
 <br>
 <br>
-EDA is needed to vet assumptions. Further iterations would look at player to player matchups, team and coach composition. Momentum and the network effect are real; it is up to us to figure out how to measure it.
+  EDA is needed to vet assumptions. Further iterations would look at player to player matchups, team and coach composition. Momentum and the network effect are real; it is up to us to figure out how to measure it.
