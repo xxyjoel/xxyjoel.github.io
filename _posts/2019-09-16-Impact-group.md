@@ -6,9 +6,9 @@ categories: [musings, finance, impact]
 comments: true
 ---
 ## Overview
-I reached out to a friend 4 years back with the intent of starting a blog to answer questions like: ‘do Bollinger bands work?’ and ‘does the ‘golden cross / death cross’ hold true?’ It morphed into an investment club, which turned into an group of guys meeting every Tuesday to build models to try and predict the stock market - yeah, yeah, yeah; we drank the Kool-Aid, but you know what? It tasted good! 
+I reached out to a friend 4 years back with the intent of starting a blog to answer questions like: ‘do Bollinger bands work?’ and ‘does the ‘golden cross / death cross’ hold true?’ It morphed into an investment club, which turned into an group of guys meeting every Tuesday to build models to try and predict the stock market - yeah, yeah, yeah; we drank the Kool-Aid, but you know what? It tasted good. 
 
-I ended up getting my series 65, starting a proper investment company, [IMPACT Group](www.impctgrp.com) and two of the guys were groomsmen in my wedding. So, despite not finding a mathematical formula to mint money, the adventure was worth the effort.
+Eventually I ended up getting my series 65 and starting a proper investment company, [IMPACT Group](www.impctgrp.com). Two of the guys I met with were groomsmen in my wedding, so despite not finding a mathematical formula to mint money, the adventure was worth the time spent.
 
 Currently we are transitioning IMPACT Group into an online portfolio marketplace where people can (1) easily access unique financial products (2) at the lowest cost and (3) feel good about not only where, but with whom, they are investing in. 
 ## Industry takeaways & factoids:
