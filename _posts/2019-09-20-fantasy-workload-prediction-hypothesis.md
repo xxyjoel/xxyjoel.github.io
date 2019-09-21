@@ -24,4 +24,4 @@ Potential factors, not currently included in projections, at play in determining
   * It is inherently difficult to measure much of their performance, and an entire analysis could be done on team performance as a result of the o-line. 
 <br>
 <br>
-EDA and Further analysis would look at player to player matchups, team and coach composition. Momentum and the network effect are real; it is up to us to figure out how to measure it.
+EDA is needed to vet assumptions. Further iterations would look at player to player matchups, team and coach composition. Momentum and the network effect are real; it is up to us to figure out how to measure it.
