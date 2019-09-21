@@ -2,7 +2,7 @@
 layout: post
 title: Impact group
 excerpt: "My journey though finance."
-categories: [musings][finance]
+categories: [musings, finance, impact]
 comments: true
 ---
 ## Overview
