@@ -14,6 +14,7 @@ So that we have something to compare against, I want to breakdown the current �
 * Player matchup – this is a simple star metric (1-5) that is determined by the players relative projected points, compared to other positions. 
   * This is an assumption and needs to be tested. Look at projected points to star ratings. If inverse correlation or no correlation exist, then reject hypothesis and accept null.  
 <br>
+<br>
 To make the effort more attractive, intuition tells us workload would be easier to predict than completion rates – rush yards, completed passes, touch downs, etc – which is the current basis for projected player scores. 
 <br>
 <br>
