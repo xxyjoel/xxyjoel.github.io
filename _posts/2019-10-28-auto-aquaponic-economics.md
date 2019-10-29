@@ -1,7 +1,7 @@
 ---
 layout: post
-title: economics of an automated aquaponic system
-excerpt: "meta analysis on method cost comparisons for hydroponics & aquaponics compared to traditional farming methods"
+title: economics of commercial aquaponics
+excerpt: "meta analysis on economic viability of commercial aquaponic, aeroponic and hydroponic farming methods"
 categories: [aquaponics, theory, analytics]
 comments: true
 image:
