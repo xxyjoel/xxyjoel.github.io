@@ -6,6 +6,7 @@ categories: [aquaponics, theory, analytics]
 comments: true
 image:
  feature: /img/systemdesign-google.png
+ feature: /img/economics-table6.png
 ---
 ## Overview
 While researching farming & gardening methods I stumbled upon aquaponics - a blend of [aquaculture](https://en.wikipedia.org/wiki/Aquaculture) and [hydroponics](https://en.wikipedia.org/wiki/Hydroponics) and became enamored with its potential. It seemed to promise the ability to rid our dependency of pesticides, water and soil while increasing productivity and crop yield. If the method seems to promise everything shy of terraforming capabilities, where is the ubiquity?   
@@ -53,9 +54,58 @@ Additional economic variables:
 ## Economic Viability 
 There is not a lot of information on the ROI timelines of aquaponic systems. I assume becuase the technology required to commercially scale these systems has, until recently remained cost prohibitive (e.g. LED lights). Additionally, many companies offering aquaponic based products also offer consulting services. Presumably, given the quantity of consultants relative to aquaponic farmers, it is more lucrative to consult than produce. 
 
-Recent reports suggest profitability, while dependent on many factors such as geography and climate, is primarily dependent upon whether or not the farmer is able to offer (and charge for) organic products. [Journal of Applied Agriculture](https://drive.google.com/open?id=1v4vkSDpuGp3ewyujlglsggn1LdfpC5tW) 
+Recent reports suggest economic viability, while dependent on many factors such as geography and climate, is primarily dependent upon whether or not the farmer is able to offer (and charge for) organic products. [Journal of Applied Agriculture](https://drive.google.com/open?id=1v4vkSDpuGp3ewyujlglsggn1LdfpC5tW) 
 
 Further analysis show that labor, regardless of farm size, equates to 2/3 of total farm operational costs. If one was able to structure the greenhouse / farm is such a way where automated harvesting is a viable solution, aquaponic farming costs could begin to compete with non-organic produce. 
+![Annual production, investment and operating cost for a small farm](/img/economics-table6.png)
+[Quagrainie et al 2018](https://drive.google.com/open?id=1v4vkSDpuGp3ewyujlglsggn1LdfpC5tW) 
+
+
+## Market Research & Existing Companies
+Noteable companies in the space:
+* [Gotham greens](http://www.gothamgreens.com/) - new york & chicago based local  
+* [Aerofarms](https://aerofarms.com) - new jersey based vertical farming company. 
+* [Zipgrow](https://zipgrow.com/) (originally 'Bright Agrotech' this company was acquired by Plenty. Bright Agrotech's founder, Nate Storey, now serves as Plenty's CSO)
+•	[Bowery](https://boweryfarming.com/) – new York based vertical farming. one of the two major players in the vertical farming space. 
+•	[Plenty](https://www.plenty.ag/) - san francisco based automated vertical farming company. recently received 200m investment from softbank capital. 
+
+### Overview of Similarities & Differences
+**Similarities**
+* Primary product - leafy green variants
+* Branding, message and competitive advantage - local, organic, growth 24/7, non-gmo, pesticide free, premium quality, etc. 
+* Expansion & M&A hisotry - limited; even companies such as Gotham Greens, who have been around since 2011, have limited expansion history   
+
+**Differences**
+* Architecture - vertical, horizontal, stacked-horizontal 
+* System - aquaponics, hydroponics, aeroponics 
+* Harvest method - semi-automatic (plenty uses a robot arm to dismount the vertical towers prior to harvesting manually), manual (aerofarms uses large, hydraulic lifts to transport people up and down the aisles while harvesting) 
+
+**Conclusion**
+Agritech is an exciting space. The message is nobel - promising to better the planet's inhabitants by increasing access to high quality healthy food at lower prices - and the ability to control virtually all variables associated with growing produce is attractive. But, while investment interest in urban farming apprears to have been increasing over the years, it is difficult to determine (1) if there is a successful, economically viable, commercial manufacturing model and (2) if general private interest in the technology is trending upward.  
+
+One of the most cited papers on the economics of small-scale commercial aquaponics estimates MIRR at ~7% (12-13% w/organic certification) listing the primary constraint being system maintenance and harvesting labor. [Tokunaga et al 2015](https://drive.google.com/open?id=1RILiONpCwtpkB9EqyiV6PfS8vbryIB9V) With a more effecient system, margins could increase to compete with traditional agricultural methods. 
+
+## Design Improvements
+Based on the brief analysis above, a hybrid aeroponic / aquaponic, indoor, vertical greenhouse solution seems optimal to produce vertical growth vegitation (lettuce, tomatoes, herbs, etc.). 
+
+**System components** 
+* Plant & fish profiles - optimum living conditions and expected growth behaviors (with images) based on research compared to observation
+* Airflow monitoring - system timers to turn fans on and off based on temp, biometric pressure, wind speed, etc.
+* Automated fish feeding 
+* Temp control - water and air will be monitored and adjusted based on fish and plant profiles
+* Light spectrum - red / blue light optimums based on plant profiles (yellow is not needed) 
+
+**Architecture**
+System is a closed-loop self sustaining system. Shelving units are dedicated to seedling germination and care. Even when factoring in labor, the quantity of seedlings per sq ft is not cost prohibitive. Image recognition based on plant profile will be used to determine when the system should harvest. Automated bucketing / harvesting method has not been completed. Center tank (sump, swirl, filter) is surrounded by sensors to ensure temperate climate. LED lights are not listed, but remain part of the vertical grow apparatus. Prototype is stored in an 7' x 8' x 9' greenhouse. 
+
+![Vertical grow apparatus with self feed, drain & harvest capability](/img/vertical grow towers-4 rack.PNG)
+![Greenhouse design](/img/greenhouse-design-small.PNG)
+
+Because other large players in the space have selected lettuce variants as their primary product, I will as well. I have selected Tilapia as the ideal fish based on their growth rate and my geography / climate.
+
+
+
+
 
 
 
