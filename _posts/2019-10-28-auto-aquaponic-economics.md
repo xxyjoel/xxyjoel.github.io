@@ -7,6 +7,7 @@ comments: true
 image:
  feature: /img/systemdesign-google.png
  feature: /img/economics-table6.png
+ 
 ---
 ## Overview
 While researching farming & gardening methods I stumbled upon aquaponics - a blend of [aquaculture](https://en.wikipedia.org/wiki/Aquaculture) and [hydroponics](https://en.wikipedia.org/wiki/Hydroponics) and became enamored with its potential. It seemed to promise the ability to rid our dependency of pesticides, water and soil while increasing productivity and crop yield. If the method seems to promise everything shy of terraforming capabilities, where is the ubiquity?   
