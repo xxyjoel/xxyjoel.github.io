@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fantasy Football workload prediction theory
+title: fantasy football workload prediction theory
 excerpt: "Suggested improvements on the current player projected point scoring mechanism."
 categories: [musings, football, theory]
 comments: true
