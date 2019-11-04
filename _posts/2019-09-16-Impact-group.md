@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Impact group
-excerpt: "My journey though finance."
+title: impact group
+excerpt: "my [brief] journey though finance."
 categories: [musings, finance, impact]
 comments: true
 ---
