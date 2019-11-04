@@ -1,13 +1,13 @@
 ---
 layout: post
-title: RFM Analysis Core Template  
+title: rfm analysis core template  
 excerpt: "Sample of how to pull data, categorize and score customers based on their purchasing behavior."
 categories: [code]
 modified: 2014-09-14
 comments: true
 ---
 ## overview 
-Revenue and client quantity distributions are rarely the same. This scoring mechanism seeks to normalize customer behavior by assigning specific actions to newly labeled cohorts.  
+Revenue and client quantity distributions are rarely the same. This scoring mechanism seeks to normalize customer behavior by assigning specific actions to newly labeled cohorts. While there are virtually limitless variations on this scoring mechanism, it remains a powerful tool that can be utilized in a wide variety of environments with limited data. 
 
 
 ```r
