@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Defining intelligence and randomness
+title: defining intelligence and randomness
 excerpt: "Frameworks for defining intelligence and randomness"
 categories: [musings, theory]
 comments: true
