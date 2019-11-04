@@ -1,7 +1,7 @@
 ---
 layout: post
-title: My Task Management Procedure 
-excerpt: "How I manage to keep my life (and brain) organized so I can focus on what matters."
+title: task management procedure 
+excerpt: "how i distill and manage tasks, requests and projects requirements from multiple sources / inputs."
 categories: [musings]
 comments: true
 image:
