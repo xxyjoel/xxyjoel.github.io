@@ -12,7 +12,7 @@ image:
 ## Overview
 David Brooks coined the term [Dataism](https://en.wikipedia.org/wiki/Dataism) in a 2013 New York Times post. In short, he argues that, in a world of increasing complexity, relying on data could reduce cognative biases and "illuminate patterns of behavior we haven't noticed yet".
 
-In that same vain, I began tracking my 'personal happiness index' - a daily score with associated summaries - with the hopes that I would be able to identify factors that influence my mood, both positively and negatively. Once mood factors have been identified, rituals & habits can be altered for optimum mood.   
+In that same vain, I began tracking my 'personal happiness index' - a daily score and associated summaries - with the hopes that I would be able to identify factors that influence my mood, both positively and negatively. Once mood factors have been identified, rituals & habits can be altered for optimum mood.   
 
 ## Theory, Assumptions & Procedure
 Theory:
@@ -38,4 +38,4 @@ PowerBI [Word Cloud](https://appsource.microsoft.com/en-us/product/power-bi-visu
 
 
 ## Conclusion 
-Quick review of work importance, frequency and daily score leads me to believe work has a large impact on my general day-to-day happiness. This makes intuitive sense giving societal constructs, specifically those for males, in the United States and my personal upbringing, which I will not get into here. 
+Quick review of work importance, frequency and daily score leads me to believe work has a large impact on my general day-to-day happiness. This makes intuitive sense giving societal constructs, specifically those for males, in the United States. Additionally, while the pared word is not listed, "with" is a high volume word generally associated with a persons name. This leads me to believe time with family & friends also has a larage impact on mood. Worth noting, [confirmation bias](https://en.wikipedia.org/wiki/Confirmation_bias) is probable given these conclusions are in line with my original theory. 
