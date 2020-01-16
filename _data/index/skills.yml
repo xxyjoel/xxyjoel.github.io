@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: Python, R, SQL, DAX/MDX, PowerBI, Git
-percentage: 65, 55, 50, 75, 90, 80
+aspects: Python, R, SQL, DAX/MDX, PowerBI, Azure Suite
+percentage: 70, 55, 50, 75, 85, 80
