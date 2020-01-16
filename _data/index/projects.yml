@@ -15,7 +15,7 @@
   github: https://gist.github.com/xxyjoel/10deca646bc875792152c4d882236200
 
 - name: state shift probability model  
-  descr: "determine probability & magnitud eof of stock price swings"
+  descr: "determine probability & magnitude of of stock price swings"
   github: https://gist.github.com/xxyjoel/2dd9e6438b58d535b7402ed93c791835
 
 - name: arima 
