@@ -2,7 +2,12 @@
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name: AIM Consulting
   link: http://www.aimconsulting.com/
-  date: Aug 2018 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  date: Jul 2019 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  job: Lead Consultant
+
+- name: AIM Consulting
+  link: http://www.aimconsulting.com/
+  date: Aug 2018 - Jul 2019
   job: Sr. Consultant
 
 - name: Funko 
@@ -18,7 +23,7 @@
 - name: Convoy
   link: http://www.convoy.com/
   date: May 2015 - June 2016
-  job: Growth  
+  job: Founding Team (Employee #6)
   
 - name: InstaFreight 
   link: 
