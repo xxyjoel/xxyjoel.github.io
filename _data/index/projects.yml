@@ -13,7 +13,11 @@
 - name: gender mapping
   descr: "infer gender based on name."
   github: https://gist.github.com/xxyjoel/10deca646bc875792152c4d882236200
-  
+
+- name: state shift probability model  
+  descr: "determine probability & magnitud eof of stock price swings"
+  github: https://gist.github.com/xxyjoel/2dd9e6438b58d535b7402ed93c791835
+
 - name: arima 
   descr: "pull data from target sql db, perform forecast (pdq values hardcoded) and writeback forecasted values to target db."
   github: https://gist.github.com/xxyjoel/9d0440d5f9444ad3a4f6cedbf8d37ae8
