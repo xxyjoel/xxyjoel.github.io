@@ -24,7 +24,7 @@ See [my github stars](https://github.com/xxyjoel?tab=stars) for a complete list.
 
 TODO - for a number of data sets, based on data types provided, size, unique value counts, missing value counts, duplicate counts, distributions and other notable attributes I am not thinking of, label all possible visuals (from the list below) and the criteria used to select them. this will set you up for a supervised learning approach. future input = pandas df, output = recommended labeled chats, graphs and summary statistics  
 
-TODO - limitations arrise given single df input. determine how to provide same service for related tables
+TODO - limitations arrise given single df input. determine how to provide same service for related tables. when plotting numerical / int distributions, determine how to differentiate between IDs (effectively numberic categorical values) and non-IDs 
 
 TODO - add / finish table of contents
 
