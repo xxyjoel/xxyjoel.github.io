@@ -7,7 +7,7 @@ modified: 2014-09-14
 comments: true
 ---
 ## overview 
-Revenue and client quantity distributions are rarely the same. This scoring mechanism seeks to normalize customer behavior by assigning specific actions to newly labeled cohorts. While there are virtually limitless variations on this scoring mechanism, it remains a powerful tool that can be utilized in a wide variety of environments with limited data. 
+Revenue and client quantity distributions are rarely the same. This scoring mechanism seeks to normalize customer behavior by assigning specific actions to newly labeled cohorts. While its origins date back to the 1930's, there are virtually limitless variations on this scoring mechanism and it remains a powerful tool that can be utilized in a wide variety of environments with limited data. 
 
 
 ```r
