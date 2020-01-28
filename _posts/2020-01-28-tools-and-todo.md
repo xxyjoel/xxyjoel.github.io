@@ -19,7 +19,7 @@ See [my github stars](https://github.com/xxyjoel?tab=stars) for a complete list.
 * [models by industry](https://github.com/xxyjoel/industry-machine-learning) - I love when the gap between technical and business is virtually non-existent and [FirmAI](https://www.firmai.org/) does an impeccable job categorizing models by application scenarios. 
 
 
-### projects
+## projects
 **automated eda** - while the [objectives of EDA](https://en.wikipedia.org/wiki/Exploratory_data_analysis) are to (1) suggest hypothesis about the causes of obsereved phenomena (2) assess assumptions on which statistical inference will be based (3) support the selection of appropriate statistical tools and techniques and (4) probide a basis for further data colleciton through experimentation, the techniques and tools used are fairly limited. By profiling your data prior to conducting analysis, I believe you can automate much of discovery.   
 
 TODO - for a number of data sets, based on data types provided, size, unique value counts, missing value counts, duplicate counts, distributions and other notable attributes I am not thinking of, label all possible visuals (from the list below) and the criteria used to select them. this will set you up for a supervised learning approach. future input = pandas df, output = recommended labeled chats, graphs and summary statistics  
