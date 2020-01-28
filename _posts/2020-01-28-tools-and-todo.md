@@ -2,7 +2,7 @@
 layout: post
 title: tools and todos  
 excerpt: "Resources I use frequently, shout out to instrumental developers in the community and projects I am currently interested in."
-categories: [code],[musings],[tools]
+categories: [code,musings,tools]
 modified: 2020-01-28
 comments: true
 ---
