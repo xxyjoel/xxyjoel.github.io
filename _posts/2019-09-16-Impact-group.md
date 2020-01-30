@@ -37,14 +37,14 @@ Used to determine whether or not the model is a fit for the specific investor / 
 * low-beta-to-broad market benchmark (models should have a low correlation to the overall market)
 * sharpe ratio
 * volatility (standard deviation) 
- * volatility should track to expected value's volatility
+  * volatility should track to expected value's volatility
 * turn-over ratios 
- * should track to expected values
+  * should track to expected values
 * order timing (time from order placed -> order executed)
 * root symbol analysis
- * return per ticker
- * trade count per ticker 
- * position concentrations
+  * return per ticker
+  * trade count per ticker 
+  * position concentrations
 
 **Sample metric problem scenarios**
 **NOTE** initial data for the purposed of this demonstration was pulled from robinhood and visualized in excel. while tableau or pbi would have been nice, it seemed like overkill as live connections were not supported. [package used](https://github.com/sanko/Robinhood) has been deprecated.   
@@ -81,6 +81,7 @@ Solution - % of total trades positive vs negative, rolling period based on trade
 * **Asset managers offer peace of mind, but very little monetary value to client’s lives –** performance over time is similar between firms and does not justify exorbitant fees. As a result, fees are under pressure and have been declining. When asking prospective clients (n=17) what they cared about most in an asset manager, responses seldom varied: “more or less I just want to make sure [my portfolio] is going up”, “I don’t really care, as long as my money is safe.”, “I enjoy managing my money, I just don’t have the time”. If a platform can offer the same piece of mind, we can reduce management expenses across the board
 
 * **Asset managers (including robo advisors) are passive indexers –** this means all in management costs need to be calculated when picking the right manager or advisor 
+
 ![passive-management](/img/index-funds-marketshare.png)
 
 * **Mutual funds are a thing of the past –** The  rise of ETFs and high comparative fees are primary factors in their decline… I believe the only reason they still exist is because of institutional and governmental (401k, pension, etc) control on retirement funds. I would have liquidated my 401k years ago and managed it myself, had it not been for the fees associated. 
