@@ -1,4 +1,4 @@
-# Update 2019-07-25
+# Update 2019-09-25
 
 Refactored Leonids theme for personal profile. Old work on forecastforum.com
 
@@ -16,4 +16,5 @@ You can put all your info into these files, and they will be featured on the res
 ## TODO
 
 - [ ] timeline
+- [ ] upload remaining gists 
 - [ ] portfolio summary page
