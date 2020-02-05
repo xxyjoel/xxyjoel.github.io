@@ -8,7 +8,7 @@ email: joel.proctor@outlook.com
 description: Personal projects and cool stuff. 
 base url: xxyjoel.github.io
 url: ""
-keywords: ["blog", "python", "R", "eda"]
+keywords: ["blog", "python", "R", "eda", "aws", "azure", "devops", "data science", "apache", "airflow", "glue", "redshift", "cognitive services", "sagemaker", "boto3", "pandapy", "pandas", "scikit"]
 
 #
 ###################################
