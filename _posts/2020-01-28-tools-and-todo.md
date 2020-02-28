@@ -16,12 +16,13 @@ this is the start of a collection of tools and resources and projects currently 
 ## resources & links 
 See [my github stars](https://github.com/xxyjoel?tab=stars) for a complete list. Here are some of my favorite:
 
-* [public api list](https://github.com/public-apis/public-apis) - a complete list of public apis for you to get virtually any size / shape of data you could possibly want. Thank you to all the [contributors](https://github.com/public-apis/public-apis/graphs/contributors) (specifically, [Dave](https://github.com/davemachado)! 
+* [public api list for data](https://github.com/public-apis/public-apis) - a complete list of public apis for you to get virtually any size / shape of data you could possibly want. Thank you to all the [contributors](https://github.com/public-apis/public-apis/graphs/contributors) (specifically, [Dave](https://github.com/davemachado)! 
 
 * [awesome python libs](https://github.com/vinta/awesome-python) - curated list of amazingly-awesome python frameworks... categorized by use case! Thank you to all the [contributors](https://github.com/vinta/awesome-python/graphs/contributors) (specifically, [vinta](https://github.com/vinta)! 
 
-* [models by industry](https://github.com/xxyjoel/industry-machine-learning) - I love when the gap between technical and business is virtually non-existent and [FirmAI](https://www.firmai.org/) does an impeccable job categorizing models by application scenarios. 
+* [models by industry and application scenario](https://github.com/xxyjoel/industry-machine-learning) - I love when the gap between technical and business is virtually non-existent and [FirmAI](https://www.firmai.org/) does an impeccable job categorizing models by application scenarios. 
 
+* [automated feature engineering](https://docs.featuretools.com/en/stable/) - [github here](https://github.com/FeatureLabs/featuretools) with tons of great tools to help automate your feature engineering process 
 
 ## 2020 projects
 **automated eda** - while the [objectives of EDA](https://en.wikipedia.org/wiki/Exploratory_data_analysis) are to (1) suggest hypothesis about the causes of obsereved phenomena (2) assess assumptions on which statistical inference will be based (3) support the selection of appropriate statistical tools and techniques and (4) probide a basis for further data colleciton through experimentation, the techniques and tools used are fairly limited. By profiling your data prior to conducting analysis, I believe you can automate much of discovery.   
@@ -36,3 +37,4 @@ TODO - limitations arrise given single df input. determine how to provide same s
 
 **data science toolkit** - consolidate github resources, useful packages and tools for various common analysis problems 
 
+**infrastructure toolkit** - consolidate infrastructure tools / resources, their limitations and application scenarios
