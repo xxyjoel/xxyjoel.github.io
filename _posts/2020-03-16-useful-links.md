@@ -21,13 +21,22 @@ given the pace at which technology is ever-changing, there should be a portion o
 
 ## topics  
 * [data scientist roadmap](https://github.com/MrMimic/data-scientist-roadmap) - really well done repo by [MrMimic](https://github.com/MrMimic) that outlines fundamentals in various areas 
+
 * [statistics fundamentals](https://www.statlect.com/fundamentals-of-statistics) - modules ranging from point estimation to bayesian inference 
+
 * [python best practices, green tea press](http://greenteapress.com/thinkpython/html/index.html) - how to think like a (python) computer scientist 
 * [hitchhikers guide to python, o'reilly](https://docs.python-guide.org/) - environment setup standards and generally how to write great python code 
+
 * [hundred page machine learning book](http://themlbook.com/) - Andriy is nice enough to offer this book on a 'read first, buy later' principal; i eneded up purchasing the paperback copy... because why wouldnt you want to support people doing good for the community? 
+
 * [hundred page machine learning book - data & code samples](https://github.com/aburkov/theMLbook) - the code to go with the hundred page ml book's examples
+
 * [ml prod deployment methods](https://www.kdnuggets.com/2019/06/approaches-deploying-machine-learning-production.html) - overview of some deployment methods with varying environments & scenarios 
+
 * [ml evaluation methods p1](https://www.oreilly.com/data/free/files/evaluating-machine-learning-models.pdf) - overview of basic evaluation metrics and methods for common model application scenarios 
+
 * [ml evaluation methods p2](http://pages.cs.wisc.edu/~dpage/cs760/evaluating.pdf) - overview of basic evaluation metrics and methods for common model application scenarios 
+
 * [kaggle ensembling guide](https://mlwave.com/kaggle-ensembling-guide/) - methods of improving the accuracy of various ml tasks by joining models 
+
 * [application scenarios](https://github.com/firmai/industry-machine-learning) - i have linked to this before in previous posts, however, it is useful to understand *where* to apply the tools in your toolbox and [firmai](https://github.com/firmai) provides the best list i have found to date  
