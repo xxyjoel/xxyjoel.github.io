@@ -1,7 +1,7 @@
 ---
 layout: post
 title: rfm analysis core template  
-excerpt: "Sample of how to pull data, categorize and score customers based on their purchasing behavior."
+excerpt: "sample of how to pull data, categorize and score customers based on their purchasing behavior."
 categories: [code]
 modified: 2014-09-14
 comments: true
