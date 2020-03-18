@@ -11,9 +11,9 @@ TODO - add / finish table of contents
 TODO - transfer projects from notes to this post
 
 ## overview 
-this is the start of a collection of tools and resources and projects currently in progress. 
+this is the start of a collection of tools and projects currently in progress
 
-## resources 
+## repos 
 See [my github stars](https://github.com/xxyjoel?tab=stars) for a complete list. Here are some of my favorite:
 
 * [public api list for data](https://github.com/public-apis/public-apis) - a complete list of public apis for you to get virtually any size / shape of data you could possibly want. Thank you to all the [contributors](https://github.com/public-apis/public-apis/graphs/contributors) (specifically, [Dave](https://github.com/davemachado)! 
