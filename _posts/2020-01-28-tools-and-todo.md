@@ -11,7 +11,7 @@ TODO - add / finish table of contents
 TODO - transfer projects from notes to this post
 
 ## overview 
-this is the start of a collection of tools and projects currently in progress
+this is the start of a collection of tools, resources and projects currently in progress
 
 ## repos 
 See [my github stars](https://github.com/xxyjoel?tab=stars) for a complete list. Here are some of my favorite:

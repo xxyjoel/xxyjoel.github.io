@@ -22,10 +22,12 @@ given the pace at which technology is ever-changing, there should be a portion o
 ## current topics of interest
 * ml - the goldilocks' fit (avoiding under / overfitting) 
 * ml - improving model testing and cross vadlidation procedures in production
-* ml - optimizing hyperparameters
+* ml - selecting & optimizing parameters & hyperparameters
+* ml - objectives and loss-functions 
 * ml - proper utilization of label versus one hot encoding 
 * ml - missing data management (done the right way) 
 * py - improving management and use of scopes, classes, instances, methods
+* py - data classes in stateless models 
 
 ## resource links  
 * [data scientist roadmap](https://github.com/MrMimic/data-scientist-roadmap) - really well done repo by [MrMimic](https://github.com/MrMimic) that outlines fundamentals in various areas 
