@@ -30,6 +30,8 @@ given the pace at which technology is ever-changing, there should be a portion o
 * py - data classes in stateless models 
 
 ## resource links  
+* [awesome production machine learning](https://github.com/EthicalML/awesome-production-machine-learning) - curated list of open source libs to deploy, monitor, version and scale your machine learning
+
 * [data scientist roadmap](https://github.com/MrMimic/data-scientist-roadmap) - really well done repo by [MrMimic](https://github.com/MrMimic) that outlines fundamentals in various areas 
 
 * [statistics fundamentals](https://www.statlect.com/fundamentals-of-statistics) - modules ranging from point estimation to bayesian inference 
@@ -60,3 +62,4 @@ good reads (and how to find more of them)
 * [hidden tech debt in ml systems](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf) 
 * [ml production readiness rubric](https://static.googleusercontent.com/media/research.google.com/cs//pubs/archive/aad9f93b86b7addfea4c419b9100c6cdd26cacea.pdf) 
 * [ssrn top 10k research papers](https://hq.ssrn.com/rankings/Ranking_display.cfm?TRN_gID=10&utm_source=share&utm_medium=ios_app&utm_name=iossmf)
+* [mathematics and statistics online](https://projecteuclid.org/)
