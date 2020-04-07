@@ -26,8 +26,8 @@ There are *many* tools that specialize in these componet categories. depending o
 * modeling - python, scikit, pytorch, tensorflow, [awesomeML](https://github.com/josephmisiti/awesome-machine-learning), etc. 
 * computation - azureVM, ec2, databricks, etc. 
 * storage - azure blob, s3, cosmos, dynamo db, azure synapse, redshift, etc.   
-* hosting - flask, django, databricks, etc.; complete list on [wiki.python.org](https://wiki.python.org/moin/WebFrameworks) 
-* configuration - docker, kubernetes, ini / toml / yaml / env files; good read on the latter types [here](https://hackersandslackers.com/simplify-your-python-projects-configuration/) 
+* hosting - sagemaker, azure ml, flask, django, databricks, etc.; more on [wiki.python.org](https://wiki.python.org/moin/WebFrameworks) 
+* configuration - pickle, docker, kubernetes, ini / toml / yaml / env files; good read on the latter types [here](https://hackersandslackers.com/simplify-your-python-projects-configuration/) 
 * monitoring - sagemaker, azure ml 
 * scheduling - airflow, sagemaker, azure ml, aws step functions + lambda, azure logic apps, etc. 
 * visualization - power bi, tableau, looker
@@ -36,6 +36,7 @@ TODO - finish flow + diagrams
 TODO - select & test
 TODO - cost analysis / comparisons 
 TODO - table of contents
+TODO - additional stack selections added 
 
 ## stack selection
 ### #1
@@ -86,22 +87,13 @@ saw [this article](https://towardsdatascience.com/simple-way-to-deploy-machine-l
 **known limitations**
 - additional costs incured for storage and compute 
 - no / crude run time scheduling 
-- no drift and model performance monitoring 
+- no drift / model performance monitoring 
 
-### #3
-**overview**
-
-
-alternatively...
-* sagemaker to monitor drift and performance + training
-* step functions + lambda to schedule runs 
-
-
-
-
-### sources 
+### useful sources 
 * [tableau docs](https://www.tableau.com/about/blog/2017/5/connect-your-s3-data-amazon-athena-connector-tableau-103-71105)
 * [parquet overview](https://databricks.com/glossary/what-is-parquet)
+* [azure + aws services comparison](https://docs.microsoft.com/en-us/azure/architecture/aws-professional/services) 
+* [simple ml model deployment](https://towardsdatascience.com/simple-way-to-deploy-machine-learning-models-to-cloud-fd58b771fdcf)
 * suggested [aws + docker prod workflow](https://towardsdatascience.com/ml-models-prototype-to-production-6bfe47973123) by [@Shreya](https://towardsdatascience.com/@shreyaghelani)
 
 
