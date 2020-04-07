@@ -1,6 +1,6 @@
 ---
 layout: post
-title: postgres + docker + windows
+title: IN PROGRESS postgres + docker 19.03.8 + windows
 excerpt: "setting up a [mostly] persistent cost effective and scalable storage option"
 categories: [data-engineering, analytics, architecture, windows, postgres, docker]
 comments: true 
@@ -94,7 +94,7 @@ mkdir -p $HOME/[my]/[preferred]/[location]/docker/volumes/postgres
 Start up a postgres instance 
 
 ```
-docker run --rm   --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data  postgres
+docker run --rm   --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v C:/Users/joelp/Google Drive/source/docker/volumes/postgres:/var/lib/postgresql/data  postgres
 ```
 
 
@@ -120,3 +120,6 @@ docker create -v /var/lib/postgresql/data --name PostgresData alpine
 
 
 NOTE: if you would like to interact with your containers from your ide, visual studio code has a [docker extension](https://github.com/microsoft/vscode-docker) that works great. 
+
+### sources
+* [running docker on wsl](https://medium.com/faun/docker-running-seamlessly-in-windows-subsystem-linux-6ef8412377aa)
