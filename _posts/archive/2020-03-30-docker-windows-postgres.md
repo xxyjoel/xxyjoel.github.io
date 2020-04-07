@@ -1,6 +1,6 @@
 ---
 layout: post
-title: IN PROGRESS postgres + docker 19.03.8 + windows
+title: in progress - postgres + docker 19.03.8 + windows
 excerpt: "setting up a [mostly] persistent cost effective and scalable storage option"
 categories: [data-engineering, analytics, architecture, windows, postgres, docker]
 comments: true 
