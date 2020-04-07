@@ -1,6 +1,6 @@
 ---
 layout: post
-title: IN PRORESS using s3 as your tableau data source 
+title: in progress - analytics application architectures 
 excerpt: ""
 categories: [aws,s3,tableau,tools,data-engineering]
 modified: 2020-04-01
@@ -8,23 +8,100 @@ comments: true
 ---
 
 ## overview
-Oversimplified, an analytics product has 3 main components - source(s), model(s), report(s). The I prefer to focus on the model development and wanted to outline a system that enables rapid protyping of an end to end analytics solution - reducing the need for source configuration and report development. 
+While oversimplified, I generally break an analytics project - one where we need to build and productionalize a moidel, surfacing its results - into eight (8) components:
 
-### suggested stack
+* integration - build ingestion and distribution pipes 
+* modeling - design best-fit model; varies based on model complexity
+* computation - determine appropriate compute resources; can be local or distributed; qty / magnitude based on business need
+* storage - store model input, parameters, results and applicable performance metrics; can be local or distributed  
+* hosting - ensure reliability and accessibility of application
+* configuration - manage application dependencies; e.g. is [model] in [container]? is [package] [version] installed in [environment]?
+* monitoring - assess mode performance at time t
+* scheduling - synchronize ingestion, model and busines timing needs
+* visualization - transfer knowledge to business domain; surfrace model results to target end user(s)
+
+There are *many* tools that specialize in these componet categories. depending on (1) the current state of your architecture and (2) what you are trying to achieve in the next n month time period, you may want to make tradeoff between cost, flexibility and usability. below are a few solution architecture ideas and which business case they might fit in. 
+
+* integration - [fivetran](https://fivetran.com/)
+* modeling - python, scikit, pytorch, tensorflow, [awesomeML](https://github.com/josephmisiti/awesome-machine-learning), etc. 
+* computation - azureVM, ec2, databricks, etc. 
+* storage - azure blob, s3, cosmos, dynamo db, azure synapse, redshift, etc.   
+* hosting - flask, django, databricks, etc.; complete list on [wiki.python.org](https://wiki.python.org/moin/WebFrameworks) 
+* configuration - docker, kubernetes, ini / toml / yaml / env files; good read on the latter types [here](https://hackersandslackers.com/simplify-your-python-projects-configuration/) 
+* monitoring - sagemaker, azure ml 
+* scheduling - airflow, sagemaker, azure ml, aws step functions + lambda, azure logic apps, etc. 
+* visualization - power bi, tableau, looker
+
+TODO - finish flow + diagrams 
+TODO - select & test
+TODO - cost analysis / comparisons 
+TODO - table of contents
+
+## stack selection
+### #1
+**overview**
+initial thought... how do I get this up and running as quickly as possible
+* python 
+* git
 * s3 - blob storage for your csv, parquet or json files
-* docker - model / result reproducability 
 * athena - required for tableau integration with s3 
 * databricks - model hosting, distributed compute 
 * tableau desktop - visualization 
 
-### flow 
-1. gather data from datawarehouse et al (source)
-2. store in s3
-3. create workspace in databricks 
-4. 
+**flow** 
+1. create repo / directory structure
+2. store raw (input) data in s3
+3. train model locally
+4. host model (notebook) in databricks  
+4. store model output in s3 
+5. build schema in athena 
+6. connect tableau 
+
+**known limitations**
+- while version control exists, capacity to ensure reproducibility and limit version conflict is low
+- no run time / scheduling 
+- no drift and model performance monitoring 
+
+### #2
+**overview**
+saw [this article](https://towardsdatascience.com/simple-way-to-deploy-machine-learning-models-to-cloud-fd58b771fdcf) by @[Tanuj Jain](https://towardsdatascience.com/@tanuj.jain.10)and liked the stack. these tools in addition to git and s3 could make for a nice next step... note the switch to power bi. we are able to connect to aws' [s3 rest api](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html) via an embeded python script. while [tableau has one too](https://community.tableau.com/thread/274550) it looks like it is limited to creating calculated fields...? more research is needed there as i am not as familiar with that feature.  
+* python 
+* git
+* flask - web servie to build rest api 
+* docker - container service 
+* s3
+* aws ec2 - compute virtualization
+* power bi
+
+**flow** 
+1. create repo / directory structure
+2. store raw (input) data in s3
+3. train model locally
+4. wrap model logic into flask application
+5. containerize flask app 
+6. host image on aws ec2 
+7. store results in s3
+8. ingest into power bi (python script to s3 api)
+ 
+**known limitations**
+- additional costs incured for storage and compute 
+- no / crude run time scheduling 
+- no drift and model performance monitoring 
+
+### #3
+**overview**
+
+
+alternatively...
+* sagemaker to monitor drift and performance + training
+* step functions + lambda to schedule runs 
+
+
+
 
 ### sources 
 * [tableau docs](https://www.tableau.com/about/blog/2017/5/connect-your-s3-data-amazon-athena-connector-tableau-103-71105)
 * [parquet overview](https://databricks.com/glossary/what-is-parquet)
+* suggested [aws + docker prod workflow](https://towardsdatascience.com/ml-models-prototype-to-production-6bfe47973123) by [@Shreya](https://towardsdatascience.com/@shreyaghelani)
 
 
