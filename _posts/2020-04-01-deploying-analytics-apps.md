@@ -8,27 +8,37 @@ comments: true
 ---
 
 ## overview
-While oversimplified, I generally break an analytics project - one where we need to build and productionalize a moidel, surfacing its results - into eight (8) components:
+How do you select which model to use? Once selected, how do you design the *right* architeceture? These questions, among others like 'how are data processed? In batches? On-demand? Real-time?' need answers before determining the best fit analytics solution for your business scenario. 
+
+Hakon does a good job (1) clarifying the learning and prediction contstraints and (2) describing various business scenarios in [this quora post](https://www.quora.com/How-do-you-take-a-machine-learning-model-to-production/answer/H%C3%A5kon-Hapnes-Strand). Using his framework:
+
+![mlops framework](/img/mlops_framework.PNG)
+
+Hakon breaks down learning into (1) offline and (2) online training and prediction into (1) batch and (2) on-demand. I'll add that 'on-demand' and 'real-time' can be further quantified to a specific service level agreements. E.g. from point new data enters source, serve results in less than time t.  
+ 
+Once service requirements are defined, we can break our analytics project - one where we need to build and productionalize a model, surfacing its results - into nine (9) components:
 
 * integration - build ingestion and distribution pipes 
 * modeling - design best-fit model; varies based on model complexity
+* version control - track model logic and parameter changes 
 * computation - determine appropriate compute resources; can be local or distributed; qty / magnitude based on business need
 * storage - store model input, parameters, results and applicable performance metrics; can be local or distributed  
 * hosting - ensure reliability and accessibility of application
 * configuration - manage application dependencies; e.g. is [model] in [container]? is [package] [version] installed in [environment]?
-* monitoring - assess mode performance at time t
-* scheduling - synchronize ingestion, model and busines timing needs
-* visualization - transfer knowledge to business domain; surfrace model results to target end user(s)
+* monitoring & retraining - assess mode performance at time t and retrain, if applicable
+* scheduling - synchronize ingestion, model and business timing needs
+* visualization - transfer knowledge to business domain; surface model results to target end user(s)
 
 There are *many* tools that specialize in these componet categories. depending on (1) the current state of your architecture and (2) what you are trying to achieve in the next n month time period, you may want to make tradeoff between cost, flexibility and usability. below are a few solution architecture ideas and which business case they might fit in. 
 
-* integration - [fivetran](https://fivetran.com/)
+* integration - [fivetran](https://fivetran.com/), stitch, aws glue, azure data factory
 * modeling - python, scikit, pytorch, tensorflow, [awesomeML](https://github.com/josephmisiti/awesome-machine-learning), etc. 
+* version control - git, databricks, ml flow
 * computation - azureVM, ec2, databricks, etc. 
 * storage - azure blob, s3, cosmos, dynamo db, azure synapse, redshift, etc.   
 * hosting - sagemaker, azure ml, flask, django, databricks, etc.; more on [wiki.python.org](https://wiki.python.org/moin/WebFrameworks) 
 * configuration - pickle, docker, kubernetes, ini / toml / yaml / env files; good read on the latter types [here](https://hackersandslackers.com/simplify-your-python-projects-configuration/) 
-* monitoring - sagemaker, azure ml 
+* monitoring & retraining - sagemaker, azure ml 
 * scheduling - airflow, sagemaker, azure ml, aws step functions + lambda, azure logic apps, etc. 
 * visualization - power bi, tableau, looker
 

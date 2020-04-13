@@ -27,7 +27,7 @@ given the pace at which technology is ever-changing, there should be a portion o
 * ml - proper utilization of label versus one hot encoding 
 * ml - missing data management (done the right way) 
 * py - improving management and use of scopes, classes, instances, methods
-* py - data classes in stateless models 
+* py - data classes 
 
 ## resource links  
 * [awesome production machine learning](https://github.com/EthicalML/awesome-production-machine-learning) - curated list of open source libs to deploy, monitor, version and scale your machine learning
