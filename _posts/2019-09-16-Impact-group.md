@@ -7,7 +7,7 @@ comments: true
 ---
 TODO - add table of contents 
 
-## Overview
+## overview
 I reached out to a friend 4 years back with the intent of starting a blog to answer questions like: ‘do Bollinger bands work?’ and ‘does the ‘golden cross / death cross’ hold true?’ It morphed into an investment club, which turned into group meeting every Tuesday to build models to try and predict the stock market - yeah, yeah, yeah; we drank the Kool-Aid, but you know what? It tasted good. 
 
 Eventually I ended up getting my series 65 and started a proper investment company, [IMPACT Group](https://www.impctgrp.com/). Two of the guys I met with were groomsmen in my wedding, so despite not finding a mathematical formula to mint money, the adventure was worth the time spent.

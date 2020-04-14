@@ -6,6 +6,9 @@ categories: [aws,s3,tableau,tools,data-engineering]
 modified: 2020-04-01
 comments: true
 ---
+TODO - update process flow 
+TODO - add process diagrams 
+TODO - add commands for test 
 
 ## overview
 How do you select which model to use? Once selected, how do you design the *right* architeceture? These questions, among others like 'how are data processed? In batches? On-demand? Real-time?' need answers before determining the best fit analytics solution for your business scenario. 
@@ -53,7 +56,7 @@ TODO - additional stack selections added
 **overview**
 initial thought... how do I get this up and running as quickly as possible
 * python 
-* git
+* github
 * s3 - blob storage for your csv, parquet or json files
 * athena - required for tableau integration with s3 
 * databricks - model hosting, distributed compute 
@@ -76,13 +79,13 @@ initial thought... how do I get this up and running as quickly as possible
 ### #2
 **overview**
 saw [this article](https://towardsdatascience.com/simple-way-to-deploy-machine-learning-models-to-cloud-fd58b771fdcf) by @[Tanuj Jain](https://towardsdatascience.com/@tanuj.jain.10)and liked the stack. these tools in addition to git and s3 could make for a nice next step... note the switch to power bi. we are able to connect to aws' [s3 rest api](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html) via an embeded python script. while [tableau has one too](https://community.tableau.com/thread/274550) it looks like it is limited to creating calculated fields...? more research is needed there as i am not as familiar with that feature.  
-* python 
-* git
+* python - language and model package source
+* github - version control 
 * flask - web servie to build rest api 
 * docker - container service 
-* s3
-* aws ec2 - compute virtualization
-* power bi
+* s3 - distributed storage
+* aws ec2 - distributed compute      
+* power bi - viz
 
 **flow** 
 1. create repo / directory structure
@@ -98,6 +101,38 @@ saw [this article](https://towardsdatascience.com/simple-way-to-deploy-machine-l
 - additional costs incured for storage and compute 
 - no / crude run time scheduling 
 - no drift / model performance monitoring 
+
+### #3
+**overview**
+
+* python 
+* github
+* github actions / travis ci
+* databricks 
+
+**flow** 
+1. create repo / directory structure
+
+ 
+**known limitations**
+- 
+
+### #4
+**overview**
+
+* python 
+* github
+* ml flow 
+* databricks
+* s3      
+* power bi
+
+**flow** 
+1. create repo / directory structure
+
+ 
+**known limitations**
+- 
 
 ### useful sources 
 * [tableau docs](https://www.tableau.com/about/blog/2017/5/connect-your-s3-data-amazon-athena-connector-tableau-103-71105)
