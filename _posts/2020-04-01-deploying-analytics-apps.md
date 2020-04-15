@@ -54,9 +54,9 @@ TODO - additional stack selections added
 ## stack selection
 ### #1
 **overview**
-initial thought... how do I get this up and running as quickly as possible
-* python 
-* github
+initial thought... how do I get this up and running as quickly as possible? 
+* python - language of choice
+* github - version control, source of truth 
 * s3 - blob storage for your csv, parquet or json files
 * athena - required for tableau integration with s3 
 * databricks - model hosting, distributed compute 
@@ -73,10 +73,44 @@ initial thought... how do I get this up and running as quickly as possible
 
 **known limitations**
 - while version control exists, capacity to ensure reproducibility and limit version conflict is low
+- requires manually copying master branch to databricks... 
+- PII is vulnerable  
 - no run time / scheduling 
 - no drift and model performance monitoring 
 
 ### #2
+**overview**
+while using the same tech stack, additional features such as job scheduling, JupyterLab integrations and the databricks cli can improve our workflow. content pulled from [these docs](https://databricks.com/blog/2019/12/03/jupyterlab-databricks-integration-bridge-local-and-remote-workflows.html) 
+
+* python - language of choice
+* github - version control, source of truth 
+* databricks connect + cli + jupyterlab integration - hosting, compute, scheduling
+* s3 - blob storage for your csv, parquet or json files
+* athena - required for tableau integration with s3 
+* tableau desktop - visualization 
+
+**flow** 
+1. install anaconda 
+2. [install databricks cli](https://docs.databricks.com/dev-tools/cli/index.html) in the workspace of your chosing
+```
+pip install databricks-cli
+```
+3. configure access token & authentice to the cli
+
+
+ 
+**known limitations**
+- Structured Streaming.
+- Running arbitrary code that is not a part of a Spark job on the remote cluster.
+- Scala, Python, and R APIs for Delta table operations.
+- Most utilities in Databricks Utilities. However, dbutils.fs and dbutils.secrets are supported.
+- Apache Zeppelin 0.7.x and lower.
+
+
+**notes**
+- [databricks connect, preferred ide setup instructions](https://docs.databricks.com/dev-tools/databricks-connect.html)
+
+### #3
 **overview**
 saw [this article](https://towardsdatascience.com/simple-way-to-deploy-machine-learning-models-to-cloud-fd58b771fdcf) by @[Tanuj Jain](https://towardsdatascience.com/@tanuj.jain.10)and liked the stack. these tools in addition to git and s3 could make for a nice next step... note the switch to power bi. we are able to connect to aws' [s3 rest api](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html) via an embeded python script. while [tableau has one too](https://community.tableau.com/thread/274550) it looks like it is limited to creating calculated fields...? more research is needed there as i am not as familiar with that feature.  
 * python - language and model package source
@@ -134,11 +168,13 @@ saw [this article](https://towardsdatascience.com/simple-way-to-deploy-machine-l
 **known limitations**
 - 
 
-### useful sources 
+### useful links 
 * [tableau docs](https://www.tableau.com/about/blog/2017/5/connect-your-s3-data-amazon-athena-connector-tableau-103-71105)
 * [parquet overview](https://databricks.com/glossary/what-is-parquet)
 * [azure + aws services comparison](https://docs.microsoft.com/en-us/azure/architecture/aws-professional/services) 
 * [simple ml model deployment](https://towardsdatascience.com/simple-way-to-deploy-machine-learning-models-to-cloud-fd58b771fdcf)
 * suggested [aws + docker prod workflow](https://towardsdatascience.com/ml-models-prototype-to-production-6bfe47973123) by [@Shreya](https://towardsdatascience.com/@shreyaghelani)
+* [ml ops key challenges](https://github.com/microsoft/MLOps)
+* [jupyter bridges local & remote workflows with databricks](https://databricks.com/blog/2019/12/03/jupyterlab-databricks-integration-bridge-local-and-remote-workflows.html)
 
 
