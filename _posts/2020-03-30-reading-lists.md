@@ -33,4 +33,4 @@ To understand a person, you must understand how they think, to understand how th
 * great cases in psychoanalysis, Greenwald
 
 ## conclusion 
-I would ascertain, from this list, that my interests are in systems, nalytics, finance, economics, and psychology / sociology. This give you a good base to select conversation topics. If you have the fortune of reading all the books on the list, you might also have an inclination as to my opinions on certain subjects... knowledge is power my friends. Happy reading.  
+I would ascertain, from this list, that my interests are in systems, analytics, finance, economics, and psychology / sociology. This give you a good base to select conversation topics. If you have the fortune of reading all the books on the list, you might also have an inclination as to my opinions on certain subjects... knowledge is power my friends. Happy reading.  
