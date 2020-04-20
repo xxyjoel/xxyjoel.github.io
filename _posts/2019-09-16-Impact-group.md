@@ -16,7 +16,7 @@ While initial performance trading via robinhood was better than average, transac
 
 **UPDATE 2020-01-29** - Impact Group is still a licensed investment advisory firm (CRD 300148) and I a licensed Investment Advisor. While we returned our clients a profit, I do not believe we added enough value to warrent pursuing more funding and are not seeking any additional investments as a result. I will be refocusing my time on efforts I believe to be more valuable to future clients and society at large. Stay tuned...
 
-## Architecture design 
+## architecture design 
 **phase 1 component diagram**
 Credit to [Erick House](https://github.com/erickhouse)
 ![component diagram - phase 1](/img/component-diagram-impact-1.PNG)
@@ -28,7 +28,7 @@ Credit to [Erick House](https://github.com/erickhouse)
 ![high level architecture](/img/system-architecture-impact.PNG)
 
 
-## Performance measurement
+## performance measurement
 **Metrics**
 Used to determine whether or not the model is a fit for the specific investor / agency
 * total return
@@ -74,7 +74,7 @@ Solution - % of total trades positive vs negative, rolling period based on trade
 
 ![expected vs actual return distribution](/img/accuracy.PNG)
 
-## Industry takeaways & factoids:
+## industry takeaways & factoids:
 
 ![swot](/img/swot-brief-finance.PNG)
 
@@ -118,7 +118,7 @@ Solution - % of total trades positive vs negative, rolling period based on trade
 
 * **Global ETF asset value:** $4.569 Trillion [source]
 
-## Model development takeaways & factoids:
+## model development takeaways & factoids:
 * **Getting good data is hard –** prices vary by institution and the existence of dark pools means even order book data cannot be relied upon
 
 * **Measuring your model (or portfolio manager’s) performance is _really_ hard –** if I were to tell you to pick manager, manager A who returned 12% over the last year, manager B who returned 35%, who would you pick? What If I told you A returned ~0.75% a month whereas B was in the red 15%  for eleven months out of the year and made it all back in the twelfth? Has your opinion changed? 
@@ -126,9 +126,8 @@ Solution - % of total trades positive vs negative, rolling period based on trade
 
 * **Broker APIs are terrible outdated –** there are services which range in cost from a percentage of aum to 40k a year + a percentage of aum. I am still in the process of finding the right partner. 
   * Currently we connect directly to the interactive brokers api via our own api containerized and hosted on gcp 
-<br>
 
-## Methodologies and beliefs 
+## methodologies and beliefs 
 * Major market forces driving average increase in sector value (avg 9% per annum) are:
   * Increase in capital contribution 
   * Currency valuation 
@@ -142,7 +141,7 @@ Solution - % of total trades positive vs negative, rolling period based on trade
 * All models will eventually be retired. 
 
 
-## Question checklist 
+## question checklist 
 The major problems that exist when trying to automate trading methods.  It is imperative to have a testable, measurable process in place to continually monitor and determine success rates in the following areas:
 * System architecture
   * Is the system as lean as possible? 
@@ -174,9 +173,8 @@ The major problems that exist when trying to automate trading methods.  It is im
 * When do you stop using a model (when is performance undesirable?)
 
 
-## Conclusion
+## conclusion
 Like most endeavors, you end up discovering more questions than you do answers. Some of the most difficult problems we solved had nothing to do models… it had to do with measuring success: How do you determine where to generate a buy or a sell signal? How do you determine if the buy signal was good or bad? What if it was neither? How do you improve your buy signal? How much can you improve your buy signal? 
-<br>
 
 If you follow this line of reasoning, you come to the conclusion that the most profitable model – the one that can capture the most potential profit – is the one that trades the most frequently. That said, based on client and advisor feedback, the right model for the job does not always need to be the one that is the most profitable… 
 

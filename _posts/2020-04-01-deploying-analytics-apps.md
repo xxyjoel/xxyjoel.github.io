@@ -17,7 +17,7 @@ Hakon does a good job (1) clarifying the learning and prediction contstraints an
 
 ![mlops framework](/img/mlops_framework.PNG)
 
-Hakon breaks down learning into (1) offline and (2) online training and prediction into (1) batch and (2) on-demand. I'll add that 'on-demand' and 'real-time' can be further quantified to a specific service level agreements. E.g. from point new data enters source, serve results in less than time t.  
+Hakon breaks down learning into (1) offline and (2) online training and prediction into (1) batch and (2) on-demand. I'll add that 'on-demand' could be quantified to a specific service level agreement. E.g. from point new data enters source, serve results in less than time t.  
  
 Once service requirements are defined, we can break our analytics project - one where we need to build and productionalize a model, surfacing its results - into nine (9) components:
 
@@ -41,7 +41,7 @@ There are *many* tools that specialize in these componet categories. depending o
 * storage - azure blob, s3, cosmos, dynamo db, azure synapse, redshift, etc.   
 * hosting - sagemaker, azure ml, flask, django, databricks, etc.; more on [wiki.python.org](https://wiki.python.org/moin/WebFrameworks) 
 * configuration - pickle, docker, kubernetes, ini / toml / yaml / env files; good read on the latter types [here](https://hackersandslackers.com/simplify-your-python-projects-configuration/) 
-* monitoring & retraining - sagemaker, azure ml 
+* monitoring & retraining - ml flow, sagemaker, azure ml
 * scheduling - airflow, sagemaker, azure ml, aws step functions + lambda, azure logic apps, etc. 
 * visualization - power bi, tableau, looker
 
@@ -57,7 +57,7 @@ TODO - additional stack selections added
 initial thought... how do I get this up and running as quickly as possible? 
 * python - language of choice
 * github - version control, source of truth 
-* s3 - blob storage for your csv, parquet or json files
+* s3 - blob storage 
 * athena - required for tableau integration with s3 
 * databricks - model hosting, distributed compute 
 * tableau desktop - visualization 
@@ -67,9 +67,9 @@ initial thought... how do I get this up and running as quickly as possible?
 2. store raw (input) data in s3
 3. train model locally
 4. host model (notebook) in databricks  
-4. store model output in s3 
-5. build schema in athena 
-6. connect tableau 
+5. store model output in s3 
+6. build schema in athena 
+7. connect tableau 
 
 **known limitations**
 - while version control exists, capacity to ensure reproducibility and limit version conflict is low
@@ -84,8 +84,9 @@ while using the same tech stack, additional features such as job scheduling, Jup
 
 * python - language of choice
 * github - version control, source of truth 
-* databricks connect + cli + jupyterlab integration - hosting, compute, scheduling
-* s3 - blob storage for your csv, parquet or json files
+* github actions - ci
+* databricks connect + cli - hosting, compute, scheduling
+* s3 - blob storage 
 * athena - required for tableau integration with s3 
 * tableau desktop - visualization 
 
@@ -95,20 +96,35 @@ while using the same tech stack, additional features such as job scheduling, Jup
 ```
 pip install databricks-cli
 ```
-3. configure access token & authentice to the cli
+3. configure access token & authenticate to the cli
+```
+databricks configure --token 
+```
+databricks host = homepage url; https://<some-stuff>.cloud.databricks.com
+token = token you created while configuring
+4. configure github actions to trigger when merge / pull request is approved to master 
+5. create new feature branch (or clone model from databricks)
+6. make some changes / develop locally (preferred ide)
+7. push to master 
+8. update athena schema 
 
-
- 
 **known limitations**
-- Structured Streaming.
+- limited reproducibility
+- Structured Streaming
 - Running arbitrary code that is not a part of a Spark job on the remote cluster.
 - Scala, Python, and R APIs for Delta table operations.
 - Most utilities in Databricks Utilities. However, dbutils.fs and dbutils.secrets are supported.
 - Apache Zeppelin 0.7.x and lower.
-
+- requires two pushes, 1 to master branch and 1 to databricks... 
+    - real issue here is in the differing environments (local vs db) 
+- PII is vulnerable  
+- no run time / scheduling 
+- no drift and model performance monitoring 
 
 **notes**
 - [databricks connect, preferred ide setup instructions](https://docs.databricks.com/dev-tools/databricks-connect.html)
+* athena seems to be slow... why
+* this seems to be the best lightweight option for ml deployment
 
 ### #3
 **overview**
