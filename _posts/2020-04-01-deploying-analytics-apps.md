@@ -110,15 +110,12 @@ token = token you created while configuring
 
 **known limitations**
 - limited reproducibility
-- Structured Streaming
-- Running arbitrary code that is not a part of a Spark job on the remote cluster.
-- Scala, Python, and R APIs for Delta table operations.
-- Most utilities in Databricks Utilities. However, dbutils.fs and dbutils.secrets are supported.
-- Apache Zeppelin 0.7.x and lower.
-- requires two pushes, 1 to master branch and 1 to databricks... 
-    - real issue here is in the differing environments (local vs db) 
-- PII is vulnerable  
-- no run time / scheduling 
+- structured Streaming
+- running arbitrary code that is not a part of a Spark job on the remote cluster.
+- scala, python, and R APIs for Delta table operations.
+- dbutils.fs and dbutils.secrets are supported.
+- apache zeppelin 0.7.x and lower.
+- PII is vulnerable developing locally 
 - no drift and model performance monitoring 
 
 **notes**
