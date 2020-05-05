@@ -62,7 +62,7 @@ initial thought... how do I get this up and running as quickly as possible?
 * databricks - model hosting, distributed compute 
 * tableau desktop - visualization 
 
-**flow** 
+**general flow** 
 1. create repo / directory structure
 2. store raw (input) data in s3
 3. train model locally
@@ -90,7 +90,7 @@ while using the same tech stack, additional features such as job scheduling, Jup
 * athena - required for tableau integration with s3 
 * tableau desktop - visualization 
 
-**flow** 
+**general flow** 
 1. install anaconda 
 2. [install databricks cli](https://docs.databricks.com/dev-tools/cli/index.html) in the workspace of your chosing
 ```
@@ -107,6 +107,7 @@ token = token you created while configuring
 6. make some changes / develop locally (preferred ide)
 7. push to master 
 8. update athena schema 
+9. tableau desktop / server
 
 **known limitations**
 - limited reproducibility
@@ -117,11 +118,13 @@ token = token you created while configuring
 - apache zeppelin 0.7.x and lower.
 - PII is vulnerable developing locally 
 - no drift and model performance monitoring 
+- tableau server required for easy sharing and distribution of dashboard content 
 
 **notes**
 - [databricks connect, preferred ide setup instructions](https://docs.databricks.com/dev-tools/databricks-connect.html)
 * athena seems to be slow... why
 * this seems to be the best lightweight option for ml deployment
+* as of the time of this writing, the jupyterlab integration with databricks-connect did not support windows machines
 
 ### #3
 **overview**
@@ -134,7 +137,7 @@ saw [this article](https://towardsdatascience.com/simple-way-to-deploy-machine-l
 * aws ec2 - distributed compute      
 * power bi - viz
 
-**flow** 
+**general flow** 
 1. create repo / directory structure
 2. store raw (input) data in s3
 3. train model locally
@@ -146,22 +149,33 @@ saw [this article](https://towardsdatascience.com/simple-way-to-deploy-machine-l
  
 **known limitations**
 - additional costs incured for storage and compute 
+- no internet, no development
 - no / crude run time scheduling 
 - no drift / model performance monitoring 
 
-### #3
+**notes**
+- how can we work pulumi into this flow? 
+- would allow you to attach required services at the model level
+- could be interesting to scale up / down compute based on model accuracy... i.e. add data and compute when accuracy dips below threshold to billing threshold; when slope of performance increase declines and dollars invested outpace performance gained, reduce investmen; this methodology would require model performance to be linked to business revenue which may not always be possible
+
+### #4
 **overview**
 
-* python 
-* github
-* github actions / travis ci
-* databricks 
+* python - language and model package source
+* github - version control 
+* flask - web servie to build rest api 
+* docker - container service 
+* s3 - distributed storage
+* rackspace cloud - compute      
+* power bi - viz
+
 
 **flow** 
 1. create repo / directory structure
 
  
 **known limitations**
+- no internet... no development 
 - 
 
 ### #4
