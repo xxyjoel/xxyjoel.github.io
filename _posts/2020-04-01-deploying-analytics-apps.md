@@ -80,14 +80,13 @@ Once service requirements and constraints are defined, we can break our analytic
 As noted above in the toolkit, there are *many* tools that specialize in these componet categories. depending on (1) the current state of your architecture (2) your constrains and (3) what you are trying to achieve, you may want to make tradeoff between cost, flexibility and usability. Below are a few solution architecture ideas and which business case they might fit in. 
 
 ## stack selection
+_____________________________
 ### #1 - quick and easy
 **overview**
 how do I get this up and running as quickly as possible? 
-* python - language of choice
+* python + [dask](https://docs.dask.org/en/latest/)  - language of choice
 * github - version control, source of truth 
 * s3 - blob storage (model input + output)
-* local machine - compute 
-* [dask](https://docs.dask.org/en/latest/) - package to greatly improve compute performance
 * power bi desktop 
 
 **general flow**
@@ -119,7 +118,7 @@ how do I get this up and running as quickly as possible?
     * I will go into more detail here on another post 
 
 **limitations**
-- local development limits compute and storage and has general security concerns
+- storage is limited 
 - while version control exists, capacity to ensure model reproducibility and limit version conflict is low
 - PII is vulnerable  
 - no run time / scheduling; dashbaord updates require a manual run of the model(s) 
@@ -127,12 +126,12 @@ how do I get this up and running as quickly as possible?
 - limited reproducibility
 - no drift and model performance monitoring 
 
-
+_____________________________
 ### #2 - improving performance
 **overview**
 While using the same tech stack, additional features such as job scheduling, automated deployment and the databricks cli can improve our workflow. While i was not able to get it working in a reasonbile amount of time on a window machine, jupyterlab integration is another potential option at this stage. Content pulled from [these docs](https://databricks.com/blog/2019/12/03/jupyterlab-databricks-integration-bridge-local-and-remote-workflows.html) can help walk you through the process. Note, there are potential security concerns with the jupyterlab integration. 
 
-* python - language of choice
+* python + [dask](https://docs.dask.org/en/latest/) - language of choice; package for improving compute 
 * github - version control, source of truth 
 * databricks connect + cli - hosting, compute, scheduling
 * s3 - blob storage 
@@ -210,26 +209,32 @@ Commands:
 1. output results from all data to target bucket
 1. connect power bi to target bucket 
 
+**imrovements to "#1"**
+* databricks adds spark; written in scala and support python, r, sql and jvm based infra
+* organizations with access to more data engineer talent than data scientist talen will be able to support medium to medium-large scale operations
+* 
+
 **known limitations**
-- local development limits compute and storage and has general security concerns
-- while version control exists, capacity to ensure model reproducibility and limit version conflict is low
-- PII is vulnerable  
-- no drift and model performance monitoring 
-- limited reproducibility
-- running arbitrary code that is not a part of a Spark job on the remote cluster.
-- no drift and model performance monitoring 
+* local development limits compute and storage and has general security concerns
+* while version control exists, capacity to ensure model reproducibility and limit version conflict is low
+* PII is vulnerable  
+* no drift and model performance monitoring 
+* limited reproducibility
+* running arbitrary code that is not a part of a Spark job on the remote cluster.
+* no drift and model performance monitoring 
 
 **notes**
-- [databricks connect, preferred ide setup instructions](https://docs.databricks.com/dev-tools/databricks-connect.html)
+* [databricks connect, preferred ide setup instructions](https://docs.databricks.com/dev-tools/databricks-connect.html)  
 * as of the time of this writing, the jupyterlab integration with databricks-connect did not support windows machines
-
+_____________________________
 ### #3 - automating your workflow 
 **overview**
 saw [this article](https://towardsdatascience.com/simple-way-to-deploy-machine-learning-models-to-cloud-fd58b771fdcf) by @[Tanuj Jain](https://towardsdatascience.com/@tanuj.jain.10)and liked the stack. these tools in addition to git and s3 could make for a nice next step...
 * python - language and model package source
 * github - version control 
 * s3 - distributed storage
-* ec2 - distributed compute      
+* ec2 - distributed compute    
+* dask  
 * power bi - viz
 * python - language of choice
 * github - version control, source of truth 
