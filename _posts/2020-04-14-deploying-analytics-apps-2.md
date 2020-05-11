@@ -17,7 +17,7 @@ In the [first post](https://xxyjoel.github.io/articles/2020-03/deploying-analyti
 * manual updates required to update dashboard 
 * no drift and model performance monitoring 
 
-### #part 2 - scaling operations
+### part 2 - scaling operations
 **overview**
 While using the same tech stack, additional features such as job scheduling, automated deployment and the databricks cli can improve our workflow. While i was not able to get it working in a reasonbile amount of time on a window machine, jupyterlab integration is another potential option at this stage. Content pulled from [these docs](https://databricks.com/blog/2019/12/03/jupyterlab-databricks-integration-bridge-local-and-remote-workflows.html) can help walk you through the process. Note, there are potential security concerns with the jupyterlab integration. 
 
@@ -73,8 +73,8 @@ databricks libraries list
 1. make some changes / develop locally (preferred ide)
 1. push to master (standard git flow)
 1. push to databricks workspace 
-```
-databricks workspace -h
+
+```databricks workspace -h
 Usage: databricks workspace [OPTIONS] COMMAND [ARGS]...
 
   Utility to interact with the Databricks Workspace. Workspace paths must be
@@ -94,7 +94,8 @@ Commands:
   ls          List objects in the Databricks Workspace
   mkdirs      Make directories in the Databricks Workspace.
   rm          Deletes objects from the Databricks...
-```
+  ```
+  
 12. configure databricks notebook to run on more (or all) data in your target bucket 
 1. output results from all data to target bucket
 1. connect power bi to target bucket 

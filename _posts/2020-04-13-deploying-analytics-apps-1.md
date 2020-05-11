@@ -39,7 +39,7 @@ More importantly, how do I build an application powered by machine learning? Thi
 
 If you are insterested, I have a working document with a [compiled list of tools here](https://docs.google.com/spreadsheets/d/1dPar1Ir7--63BboNhbrkcCqwehtwO3VcfBBaYjLJqpY/edit?usp=sharing). 
 
-### Preview 
+### preview 
 | provider  | tool   | category  |description | cost_model | integration | modeling | ... | 
 | ------------- |:-------------:| -----:|-----:|-------:|-----:|-----:|-----:|
 | fivetran     | fivetran_standard | migration | etl service for various apps | pay as you go | 1 | 0
@@ -69,7 +69,7 @@ As noted above in the toolkit, there are *many* tools that specialize in these c
 
 ## stack selection
 _____________________________
-### #part 1 - quick and easy analytics
+### part 1 - quick and easy analytics
 **overview**
 how do I get this up and running as quickly as possible? 
 * python + [dask](https://docs.dask.org/en/latest/)  - language of choice
