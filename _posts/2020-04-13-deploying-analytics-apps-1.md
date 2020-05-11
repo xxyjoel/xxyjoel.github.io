@@ -69,7 +69,7 @@ As noted above in the toolkit, there are *many* tools that specialize in these c
 
 ## stack selection
 _____________________________
-### #1 - quick and easy
+### #part 1 - quick and easy analytics
 **overview**
 how do I get this up and running as quickly as possible? 
 * python + [dask](https://docs.dask.org/en/latest/)  - language of choice

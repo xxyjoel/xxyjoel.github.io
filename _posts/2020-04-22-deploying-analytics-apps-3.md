@@ -104,7 +104,7 @@ Commands:
 
 **known limitations**
 * scripts used in datascience environment differ from those used in the databricks environment 
-    * while 
+    * while continuous integration is available, it is not a seemless transition from the python scripts to 
 * no drift and model performance monitoring 
 
 **notes**
