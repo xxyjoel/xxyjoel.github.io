@@ -74,7 +74,8 @@ databricks libraries list
 1. push to master (standard git flow)
 1. push to databricks workspace 
 
-```databricks workspace -h
+```
+databricks workspace -h
 Usage: databricks workspace [OPTIONS] COMMAND [ARGS]...
 
   Utility to interact with the Databricks Workspace. Workspace paths must be
@@ -94,8 +95,8 @@ Commands:
   ls          List objects in the Databricks Workspace
   mkdirs      Make directories in the Databricks Workspace.
   rm          Deletes objects from the Databricks...
-  ```
-  
+```
+
 12. configure databricks notebook to run on more (or all) data in your target bucket 
 1. output results from all data to target bucket
 1. connect power bi to target bucket 

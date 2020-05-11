@@ -17,7 +17,7 @@ In the [second post](https://xxyjoel.github.io/articles/2020-04/deploying-analyt
 * manual updates required to update dashboard 
 * no drift and model performance monitoring 
 
-### #part 3 - automating deployment
+### part 3 - automating deployment
 * python - language and model package source
 * github - version control 
 * s3 - distributed storage
@@ -74,6 +74,7 @@ databricks libraries list
 1. make some changes / develop locally (preferred ide)
 1. push to master (standard git flow)
 1. push to databricks workspace 
+
 ```
 databricks workspace -h
 Usage: databricks workspace [OPTIONS] COMMAND [ARGS]...
