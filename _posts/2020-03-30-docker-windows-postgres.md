@@ -1,10 +1,14 @@
 ---
 layout: post
-title: in progress - postgres + docker 19.03.8 + windows
+title: postgres + docker 19.03.8 + windows
 excerpt: "setting up a [mostly] persistent cost effective and scalable storage option"
 categories: [data-engineering, analytics, architecture, windows, postgres, docker]
 comments: true 
 ---
+
+TODO - current post logic is incomplete; update order
+TODO - test direction accuracy 
+
 ## overview
 Sample datasets are great for testing *models*, but if you want to test *theories* you need to gather data of your own. Collection methods range from open apis to web scraping (now legal in the us). While we will mention these collection methods, my primary focus is to determine the most cost effective way of storing and scaling the data needed to test your theories and hypothesis. While there are many guides written, none fit my specific use case and none walked you through the entire process, start to finish. 
 
@@ -97,29 +101,16 @@ Start up a postgres instance
 docker run --rm   --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v C:/Users/joelp/Google Drive/source/docker/volumes/postgres:/var/lib/postgresql/data  postgres
 ```
 
-
-
-
-
-
-
-
-
-
-
 ```
 #docker run -p 5432:5432 --name yourContainerName -e POSTGRES_PASSWORD=yourPassword -d postgres
 docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
 ```
 
-
 ```
 docker create -v /var/lib/postgresql/data --name PostgresData alpine
 ```
 
-
-
-NOTE: if you would like to interact with your containers from your ide, visual studio code has a [docker extension](https://github.com/microsoft/vscode-docker) that works great. 
+If you would like to interact with your containers from your ide, visual studio code has a [docker extension](https://github.com/microsoft/vscode-docker) that works great. 
 
 ### sources
 * [running docker on wsl](https://medium.com/faun/docker-running-seamlessly-in-windows-subsystem-linux-6ef8412377aa)

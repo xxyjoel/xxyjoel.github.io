@@ -1,7 +1,7 @@
 ---
 layout: post
 title: analytics application architectures - part 3
-excerpt: "sclablable application architectures with automated deployment workflows"
+excerpt: "sclablable application architectures with automated deployment workflows, model lineage and version control"
 categories: [s3,ec2,powerbi,dask,python,tools,data-engineering,databricks,ml,mlflow, github actions]
 modified: 2020-04-17
 comments: true
@@ -18,11 +18,10 @@ In the [second post](https://xxyjoel.github.io/articles/2020-04/deploying-analyt
 * no drift and model performance monitoring 
 
 ### part 3 - automating deployment
-* python - language and model package source
+* python + [dask](https://docs.dask.org/en/latest/) - language of choice; package for improving compute 
 * github - version control 
 * s3 - distributed storage
 * ec2 - distributed compute    
-* dask - distributed compute, python abstraction
 * databricks connect + cli - hosting, compute, scheduling
 * mlflow - ml lifecycle management
 * github actions - ci
@@ -30,8 +29,8 @@ In the [second post](https://xxyjoel.github.io/articles/2020-04/deploying-analyt
 
 **general flow** 
 1. install python + your favorite IDE 
-1. setup a databricks account and configure a cluster with python   
-1. [install databricks cli](https://docs.databricks.com/dev-tools/cli/index.html) in the workspace of your chosing
+2. setup a databricks account and configure a cluster with python   
+3. [install databricks cli](https://docs.databricks.com/dev-tools/cli/index.html) in the workspace of your chosing
 ```
 pip install databricks-cli
 ```
@@ -66,14 +65,15 @@ databricks libraries list
     ├── .gitignore    # intentionally untracked files
     ├── requirements.txt     # Python file used to install runtime dependencies
     ``` 
-1. store / access raw (input) data in s3
+6. store / access raw (input) data in s3
     * I use vs code and have had luck using the [aws toolkit](https://aws.amazon.com/visualstudiocode/)
-1. train model locally, taking a percentage of the total population 
+7. train model locally, taking a percentage of the total population 
     * [lukas @kdnuggets](https://www.kdnuggets.com/2019/05/sample-huge-dataset-machine-learning.html) does a good job explaining a few methods around how to correctly select a sample from a large dataset 
-1. create new feature branch (or clone existing model from databricks)
-1. make some changes / develop locally (preferred ide)
-1. push to master (standard git flow)
-1. push to databricks workspace 
+8. create new feature branch (or clone existing model from databricks)
+9. make some changes / develop locally (preferred ide)
+10. push to master (standard git flow)
+11. github actions detects change in master 
+12. github actions pushes content in target folder to databricks workspace 
 
 ```
 databricks workspace -h
@@ -97,15 +97,20 @@ Commands:
   mkdirs      Make directories in the Databricks Workspace.
   rm          Deletes objects from the Databricks...
 ```
-12. configure databricks notebook to run on more (or all) data in your target bucket 
-1. output results from all data to target bucket
-1. connect power bi to target bucket 
+13. specify model performance metrics in ml flow config file; model id assigned
+14. configure databricks notebook to run on more (or all) data in your target bucket 
+15. output results from all data to target bucket
+16. connect power bi to target bucket 
 
 **imrovements to "#2"**
+* automated model integration 
+* reproducibility 
+* historical record of model runs 
+* automated selecction of top performning model (automated parameter selection) 
 
 **known limitations**
 * scripts used in datascience environment differ from those used in the databricks environment 
-    * while continuous integration is available, it is not a seemless transition from the python scripts to 
+    * while continuous integration is available, it is not a seemless transition from the python scripts to the shared workspace. manual edits are required by a data engineer
 * no drift and model performance monitoring 
 
 **notes**
