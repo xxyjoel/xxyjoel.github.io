@@ -39,16 +39,7 @@ More importantly, how do I build an application powered by machine learning? Thi
 
 If you are insterested, I have a working document with a [compiled list of tools here](https://docs.google.com/spreadsheets/d/1dPar1Ir7--63BboNhbrkcCqwehtwO3VcfBBaYjLJqpY/edit?usp=sharing). 
 
-### preview 
-| provider  | tool   | category  |description | cost_model | integration | modeling | ... | 
-| ------------- |:-------------:| -----:|-----:|-------:|-----:|-----:|-----:|
-| fivetran     | fivetran_standard | migration | etl service for various apps | pay as you go | 1 | 0
-| aws  | sagemaker | modelng | model management service | pay as you go | 0 | 1
-| MIT License  | jenkins | integration | ci/cd service | free | 0 | 0
-
 Now that we have a good idea of the tools that are available, we can being to define out service requirements. Hakon does a good job (1) clarifying the learning and prediction contstraints and (2) describing various business scenarios in [this quora post](https://www.quora.com/How-do-you-take-a-machine-learning-model-to-production/answer/H%C3%A5kon-Hapnes-Strand). 
-
-![mlops framework](/img/mlops_framework.PNG)
 
 Worth noting how Hakon breaks down learning into (1) offline and (2) online training and prediction into (1) batch and (2) on-demand. I'll add that 'on-demand' could be quantified to a specific service level agreement. E.g. from point new data enters source, serve results in less than time t. Constrains, such as team skill set, may also shapre your optimum service requirements. Can your data engineers productionalize a jupyter notebook? Can they seamlessly convert python to scala? Or do your data scientist need to deploy their own work? Do you have a machine learning engineer? Etc. 
 
@@ -72,14 +63,14 @@ _____________________________
 ### part 1 - quick and easy analytics
 **overview**
 how do I get this up and running as quickly as possible? 
-* python + [dask](https://docs.dask.org/en/latest/)  - language of choice
+* python + [dask](https://docs.dask.org/en/latest/)  - language of choice; package for distributed computing using pandas & numpy lib formats
 * github - version control, source of truth 
 * s3 - blob storage (model input + output)
 * power bi desktop 
 
 **general flow**
-1. install python, anaconda, dask and your prefered IDE 
-1. create repo / directory structure
+1. install python (or anaconda), dask and your prefered IDE 
+1. create repo / directory structure in github
     * basic repo structure 
     ```
     ├── LICENSE
