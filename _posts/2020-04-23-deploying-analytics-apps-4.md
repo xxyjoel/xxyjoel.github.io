@@ -15,9 +15,10 @@ In the [third post](https://xxyjoel.github.io/articles/2020-04/deploying-analyti
 ### part 4 - preferred stack
 * python + [dask](https://docs.dask.org/en/latest/) - language of choice; package for improving compute 
 * github - version control 
+* github actions - ci
 * s3 - distributed storage
 * ec2 - distributed compute    
-* flask - python apu framework 
+* flask - python api framework 
 * mlflow - ml lifecycle management
 * docker - container service
 * power bi - visualization 

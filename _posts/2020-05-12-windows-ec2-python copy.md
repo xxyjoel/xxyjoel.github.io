@@ -10,7 +10,7 @@ comments: true
 ## overview 
 How to setup and configure an ec2 instance with python using a windows machine. While miniconda / anaconda can be greate for some, I have since moved away from using the environment; version hierarchy was difficult to manage between preinstalled conda packages and newly desired packages.   
 
-### the data scientists' workspace 
+### connecting to ec2 from vs code 
 * log into your aws console and navigate to the ec2 service
 * launch a **linux ami instance** and ensure a public DNS or IP is available
 * save your api key in a known location
@@ -31,4 +31,9 @@ Host <name you will use to identify your connection>
     IdentityFile <"location/of/your/.pem/file"/in/quotes>
 ```
 * save your config file. hit ctrl + shift + P and search for ```remote ssh: connect to host```
-* you should now see your ```Host``` name specified in your config file listed as a potential option in 
+* you should now see your ```Host``` name specified in your config file listed as a potential option in your remote ssh connections 
+    * NOTE: you will need to ensure the cluster is running in your aws console 
+
+### installing repo & dependencies
+* once connected to your instance, select "clone repository' in vs code to connect to your project 
+    * vs code will request authentication with github 
