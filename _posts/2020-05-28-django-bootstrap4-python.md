@@ -121,12 +121,11 @@ C:.
     └───templates (your html pages)
 ```
 
-Changes to the settings file include
-* addition of template directory 
+Changes to the settings file include the addition of template directory, 
 ```
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 ```
-* additional app in installed apps 
+additional app in installed apps, 
 ```
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -139,7 +138,7 @@ INSTALLED_APPS = [
     'content',
 ]
 ```
-* static files directory location(s)
+and static files directory location(s).
 ```
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
@@ -151,7 +150,7 @@ When repurposing the templates assets (css, js, html, etc.) we need to (1) call 
 ```
 "{% static 'some stuff' %}"
 ```
-for example the following would go from 
+For example the following would go from 
 ```
 <a class="navbar-brand @@logo_classes" href="../index.html">
 ```
