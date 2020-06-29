@@ -125,21 +125,7 @@ Changes to the settings file include the addition of template directory,
 ```
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 ```
-additional app in installed apps, 
-```
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    #my_apps
-    'content',
-]
-```
-
-and static files directory location(s).
+additional app in installed apps and static files directory location(s).
 ```
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
@@ -159,7 +145,7 @@ to
 ```
 <a class="navbar-brand @@logo_classes" href="{% static 'index.html' %}">
 ```
-note that we also had to remove the prefixed ```../``` from hrefs where we wanted static files pointed. 
+note that we also had to remove the prefixed ```../``` from hrefs where we wanted static files pointed.
 
 
  
