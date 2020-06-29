@@ -138,6 +138,7 @@ INSTALLED_APPS = [
     'content',
 ]
 ```
+
 and static files directory location(s).
 ```
 STATIC_URL = '/static/'
@@ -158,7 +159,7 @@ to
 ```
 <a class="navbar-brand @@logo_classes" href="{% static 'index.html' %}">
 ```
-note that we also had to remove the prefixed ```../```
+note that we also had to remove the prefixed ```../``` from hrefs where we wanted static files pointed. 
 
 
  
