@@ -32,8 +32,9 @@ Host <name you will use to identify your connection>
 ```
 * save your config file. hit ctrl + shift + P and search for ```remote ssh: connect to host```
 * you should now see your ```Host``` name specified in your config file listed as a potential option in your remote ssh connections 
-    * NOTE: you will need to ensure the cluster is running in your aws console 
+    * note: you will need to ensure the cluster is running in your aws console 
 
 ### installing repo & dependencies
 * once connected to your instance, select "clone repository' in vs code to connect to your project 
     * vs code will request authentication with github 
+    * note: your instance will likely come with python 2.7 preinstalled. it is possible there are instance dependencies on 2.7, so it is recommended you install an updated python version with 

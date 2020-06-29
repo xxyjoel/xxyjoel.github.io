@@ -32,10 +32,7 @@ pip install pipenv
 ```
 pipenv install django
 ```
-- now, given we are going to use bootstrap 4 with the django framework, stall django-bootstrap4
-```
-pipenv install django-bootstrap4
-```
+
 - I like to install flake8 as well, but your linter selection is prefential 
 ```
 pipenv install flake8 --dev
@@ -43,7 +40,7 @@ pipenv install flake8 --dev
 - the ```--dev``` will install both the develop and default packages from the Pipfile
 - more on various commands in this really good [pipenv writeup here](https://pipenv-fork.readthedocs.io/en/latest/basics.html) 
 
-- now we can start our project; open your terminal and call django 
+- now we can start our project; open your terminal and call django from inside your repos local location
 ```
 django-admin startproject [project_name]
 ```
@@ -90,9 +87,83 @@ pipenv shell
 ```
 python manage.py startapp [app_name]
 ```
+### modeling 
+An important step for formatting your database schema. may differ depending on your database of choice (e.g. mysql, postgres, sqlite, etc.). Three primary steps to remember:
+- alter models.py
+- run the following command to create migrations for those model changes
+```
+python manage.py makemigrations 
+```
+- run the following to apply those changes to the database
+```
+python manage.py migrate
+```
+### creating admins 
+django separates consumers, publishers (of content) and developers; to setup an admin user run the following; it will prompt you to create a user with credentials
+```
+python manage.py createsuperuser
+```
 
-### loading bootstrap & creating views
-At this point, we are assuming you have a basic understanding of (1) applications, their purpose and how they relate to the site architecture, (2) views and (3) static files, their purpose how they are organized and called upon. 
+
+## design importing bootstrap templates 
+At this point, we are assuming you have a basic understanding of (1) applications, their purpose and how they relate to the site architecture, (2) views, (3) models and database management and (4) static files, their purpose, how they are organized and called upon. Now we can get to the fun stuff... 
+
+I am going to use the [rocket theme](https://themesberg.com/product/bootstrap-themes/rocket-saas-bootstrap-template) from themeberg and they recommend using gulp. Given (1) this is a blog and (2) we want to get this up and running as quickly as possible (while learning about how it works) we are goingn to install the static files manually. 
+
+With the theme files stored in our static folder, our top level directory should look something like:
+```
+C:.
+└───main
+    ├───content (your app)
+    ├───main    (your project name; where settings.py is located)
+    ├───static (your theme)
+    ├───static_root
+    └───templates (your html pages)
+```
+
+Changes to the settings file include
+* addition of template directory 
+```
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+```
+* additional app in installed apps 
+```
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    #my_apps
+    'content',
+]
+```
+* static files directory location(s)
+```
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+```
+When repurposing the templates assets (css, js, html, etc.) we need to (1) call ```{% load static %}``` above the header and (2) locate the content called and wrap it in
+```
+"{% static 'some stuff' %}"
+```
+for example the following would go from 
+```
+<a class="navbar-brand @@logo_classes" href="../index.html">
+```
+to 
+```
+<a class="navbar-brand @@logo_classes" href="{% static 'index.html' %}">
+```
+note that we also had to remove the prefixed ```../```
+
+
+ 
+
 
 
 
