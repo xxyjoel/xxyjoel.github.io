@@ -153,11 +153,11 @@ When repurposing the templates assets (css, js, html, etc.) we need to (1) call 
 ```
 For example the following would go from 
 ```
-<a class="navbar-brand @@logo_classes" href="../index.html">
+a class="navbar-brand" href="../index.html"
 ```
 to 
 ```
-<a class="navbar-brand @@logo_classes" href="{% static 'index.html' %}">
+a class="navbar-brand" href="{% static 'index.html' %}"
 ```
 note that we also had to remove the prefixed ```../``` from hrefs where we wanted static files pointed.
 
