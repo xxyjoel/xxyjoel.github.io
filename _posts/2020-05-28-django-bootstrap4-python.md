@@ -108,58 +108,7 @@ python manage.py createsuperuser
 ## design importing bootstrap templates 
 At this point, we are assuming you have a basic understanding of (1) applications, their purpose and how they relate to the site architecture, (2) views, (3) models and database management and (4) static files, their purpose, how they are organized and called upon. Now we can get to the fun stuff... 
 
-I am going to use the [rocket theme](https://themesberg.com/product/bootstrap-themes/rocket-saas-bootstrap-template) from themeberg and they recommend using gulp. Given (1) this is a blog and (2) we want to get this up and running as quickly as possible (while learning about how it works) we are goingn to install the static files manually. 
 
-With the theme files stored in our static folder, our top level directory should look something like:
-```
-C:.
-└───main
-    ├───content (your app)
-    ├───main    (your project name; where settings.py is located)
-    ├───static (your theme)
-    ├───static_root
-    └───templates (your html pages)
-```
-
-Changes to the settings file include the addition of template directory, 
-```
-TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
-```
-additional app in installed apps, 
-```
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    #my_apps
-    'content',
-]
-```
-
-and static files directory location(s).
-```
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
-```
-When repurposing the templates assets (css, js, html, etc.) we need to (1) call "{% load static %}" above the header and (2) locate the content called and wrap it in
-```
-"{% static 'some stuff' %}"
-```
-For example the following would go from 
-```
-<a class="navbar-brand @@logo_classes" href="../index.html">
-```
-to 
-```
-<a class="navbar-brand @@logo_classes" href="{% static 'index.html' %}">
-```
-note that we also had to remove the prefixed "../" from hrefs where we wanted static files pointed.
 
 
  
