@@ -118,14 +118,8 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 ```
-When repurposing the templates assets (css, js, html, etc.) we need to (1) call 
-```
-{% l-o-a-d static %}
-``` 
-above the header and (2) locate the content called and wrap it in
-```
-{% static 'some stuff' %}
-```
+When repurposing the templates assets (css, js, html, etc.) we need to (1) call ```{% load static %}``` above the header and (2) locate the content and wrap it in ```{% static 'some stuff' %}```
+
 For example the following would go from 
 ```
 a class="navbar-brand" href="../index.html"
