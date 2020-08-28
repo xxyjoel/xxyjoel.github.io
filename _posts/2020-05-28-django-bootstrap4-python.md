@@ -36,7 +36,11 @@ pipenv install django
 ```
 pipenv install flake8 --dev
 ```
-* the ```--dev``` will install both the develop and default packages from the Pipfile
+* the 
+```
+--dev
+```
+will install both the develop and default packages from the Pipfile
 * more on various commands in this really good [pipenv writeup here](https://pipenv-fork.readthedocs.io/en/latest/basics.html) 
 
 * now we can start our project; open your terminal and call django from inside your repos local location
@@ -74,10 +78,17 @@ Running migrations:
 ```
 python manage.py runserver
 ```
-* you should see a prompt mentioning the start of your development server at ```http://127.0.0.1:8000/```
+* you should see a prompt mentioning the start of your development server at 
+```
+http://127.0.0.1:8000/
+```
 * put this address in your browser to confirm successful run 
 * note: a db.sqlite file should have also been created as a result of your server starting
-* note: an admin url will have been created by default; run ```http://127.0.0.1:8000/admin``` to view 
+* note: an admin url will have been created by default; run 
+```
+http://127.0.0.1:8000/admin
+``` 
+to view 
 * note: when leaving / rejoining the project, you will need to reactivate your project from the command line. if you prefer to use the terminal in vs code, often it will remember the interpreter / environment last used; if you are starting from scratch (which I prefer to do as a mental check that reliability is where it should be) then you will need to run the following command after navigating to your project:
 ```
 pipenv shell
@@ -118,7 +129,14 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 ```
-When repurposing the templates assets (css, js, html, etc.) we need to (1) call ```{% load static %}``` above the header and (2) locate the content and wrap it in ```{% static 'some stuff' %}```
+When repurposing the templates assets (css, js, html, etc.) we need to (1) call 
+```
+{% load static %}
+``` 
+above the header and (2) locate the content and wrap it in 
+```
+{% static 'some stuff' %}
+```
 
 For example the following would go from 
 ```
@@ -128,7 +146,11 @@ to
 ```
 a class="navbar-brand" href="{% static 'index.html' %}"
 ```
-note that we also had to remove the prefixed ```../``` from hrefs where we wanted static files pointed.
+note that we also had to remove the prefixed 
+```
+../
+``` 
+from hrefs where we wanted static files pointed.
 
 applied template: 
 
