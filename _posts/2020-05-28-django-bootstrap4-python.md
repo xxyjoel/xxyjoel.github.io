@@ -118,20 +118,6 @@ Changes to the settings file include the addition of template directory,
 ```
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 ```
-additional app in installed apps, 
-```
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    #my_apps
-    'content',
-]
-```
-
 and static files directory location(s).
 ```
 STATIC_URL = '/static/'
@@ -158,7 +144,7 @@ applied template:
 
 ![website_boot_sample](/img/website_boot_sample.png) 
 
-NOTE: github pages does not seem to like much of the html-code-as-markdown, resulting in liquid tag errors... hence this post is not as verbose as originally desired 
+NOTE: github pages does not seem to like much of the html-code-as-markdown, resulting in liquid tag errors... hence this post is not as verbose as originally desired, such as propper directory strucutre format and installed apps
 
  
 
