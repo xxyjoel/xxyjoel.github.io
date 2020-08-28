@@ -138,13 +138,11 @@ INSTALLED_APPS = [
     'content',
 ]
 ```
-
 and static files directory location(s).
 ```
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
+```
+```
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 ```
 When repurposing the templates assets (css, js, html, etc.) we need to (1) call 
