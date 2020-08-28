@@ -131,11 +131,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 ```
 When repurposing the templates assets (css, js, html, etc.) we need to (1) call 
 ```
-[% load static %] # French braces should be used in place of brackets... odd liquid tag error prevented me from using in md
+<curly brace><percent sign> load static <percent sign><curlet brace> # use symbols instead... odd liquid tag error prevented me from using in md
 ``` 
 above the header and (2) locate the content and wrap it in 
 ```
-[% static 'some stuff' %]
+<curly brace><percent sign> static 'some stuff' <percent sign><curlet brace>
 ```
 
 For example the following would go from 
@@ -144,7 +144,7 @@ a class="navbar-brand" href="../index.html"
 ```
 to 
 ```
-a class="navbar-brand" href="{% static 'index.html' %}"
+a class="navbar-brand" href="<curly brace><percent sign> static 'index.html' percent sign><curlet brace>"
 ```
 note that we also had to remove the prefixed 
 ```
