@@ -123,6 +123,34 @@ With the theme files stored in our static folder, our top level directory should
 ![directory_structure_main](/img/directory_structure_main.PNG)
 Changes to the settings file include the addition of template directory, and static files directory location(s). Ensure installed apps are updated correctly as well. 
 
+When repurposing the templates assets (css, js, html, etc.) we need to (1) call 
+```
+{% load static %}
+``` 
+above the header and (2) locate the content and wrap it in 
+```
+{% static 'some stuff' %}
+```
+
+For example the following would go from 
+```
+a class="navbar-brand" href="../index.html"
+```
+to 
+```
+a class="navbar-brand" href="{% static 'index.html' %}"
+```
+note that we also had to remove the prefixed 
+```
+../
+``` 
+from hrefs where we wanted static files pointed.
+
+applied template: 
+
+![website_boot_sample](/img/website_boot_sample.png) 
+
+NOTE: github pages does not seem to like much of the html-code-as-markdown, resulting in liquid tag errors... hence this post is not as verbose as originally desired 
 
  
 
