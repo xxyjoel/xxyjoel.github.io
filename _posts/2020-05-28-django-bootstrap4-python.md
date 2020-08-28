@@ -125,27 +125,7 @@ Changes to the settings file include the addition of template directory,
 ```
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 ```
-additional app in installed apps, 
-```
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    #my_apps
-    'content',
-]
-```
-and static files directory location(s).
-```
-STATIC_URL = '/static/'
-```
-```
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
-```
-When repurposing the templates assets (css, js, html, etc.) we need to (1) call 
+additional app in installed apps, and static files directory location(s). when repurposing the templates assets (css, js, html, etc.) we need to (1) call 
 ```
 {% load static %} 
 ```
@@ -163,6 +143,7 @@ a class="navbar-brand" href="{% static 'index.html' %}"
 ```
 note that we also had to remove the prefixed " ../ " from hrefs where we wanted static files pointed.
 
+NOTE: github pages does not seem to like much of the html-code-as-markdown, resulting in liquid tag errors... hence this post is not as verbose as originally desired 
 
  
 
