@@ -114,11 +114,7 @@ With the theme files stored in our static folder, our top level directory should
 
 ![directory_structure_main](/img/directory_structure_main.PNG)
 
-Changes to the settings file include the addition of template directory, 
-```
-TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
-```
-and static files directory location(s).
+Changes to the settings file include the addition of template directory, and static files directory location(s). Ensure installed apps are updated correctly as well. 
 ```
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
@@ -128,7 +124,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 ```
 When repurposing the templates assets (css, js, html, etc.) we need to (1) call ```{% load static %}``` above the header and (2) locate the content called and wrap it in
 ```
-"{% static 'some stuff' %}"
+{% static 'some stuff' %}
 ```
 For example the following would go from 
 ```
@@ -144,7 +140,7 @@ applied template:
 
 ![website_boot_sample](/img/website_boot_sample.png) 
 
-NOTE: github pages does not seem to like much of the html-code-as-markdown, resulting in liquid tag errors... hence this post is not as verbose as originally desired, such as propper directory strucutre format and installed apps
+NOTE: github pages does not seem to like much of the html-code-as-markdown, resulting in liquid tag errors... hence this post is not as verbose as originally desired 
 
  
 
