@@ -11,9 +11,8 @@ comments: true
 To understand a person, you must understand how they think, to understand how they think, you must understand the knowledge they bear. While general knowledge is gained through all the senses and various experiences, a reading list is a good place to start. Additionally, I found recommending a book to be a really effective communication tool. For those that do not have the time or patience to read the whole book, sparknotes, instaread and other summarization services are valuable tools. 
 
 ### current rotation 
-* 100 page machine learning book, Andriy Burkov
-* thinking in systems, Donella Meadows
-* capitalism without capital, Haskell & Westlake
+* empire of the summer moon, Gwynne 
+* venture deals, Mendelson
 * the swerve, Stephen Greenblatt 
 
 ### favorites  
@@ -21,6 +20,8 @@ To understand a person, you must understand how they think, to understand how th
 * the evolution of everything, Matt Ridley 
 * dark pools, Scott Patterson
 * misbehaving, Richard Thaler
+* 100 page machine learning book, Andriy Burkov
+* thinking in systems, Donella Meadows
 
 ### honorary mentions 
 * market wizards, Schwager
@@ -31,6 +32,7 @@ To understand a person, you must understand how they think, to understand how th
 * superforecasters, Philip Tetlock
 * the brain, David Eagleman
 * great cases in psychoanalysis, Greenwald
+* capitalism without capital, Haskell & Westlake
 
 ## conclusion 
 I would ascertain, from this list, that my interests are in systems, analytics, finance, economics, and psychology / sociology. This give you a good base to select conversation topics. If you have the fortune of reading all the books on the list, you might also have an inclination as to my opinions on certain subjects... knowledge is power my friends. Happy reading.  

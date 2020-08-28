@@ -11,6 +11,7 @@ comments: true
 How to setup and configure an ec2 instance with python using a windows machine. While miniconda / anaconda can be greate for some, I have since moved away from using the environment; version hierarchy was difficult to manage between preinstalled conda packages and newly desired packages.   
 
 ### connecting to ec2 from vs code 
+* for a more detailed description, [follow this guide from aws](http://bw4sz.github.io/ec2/#v.-accessing-an-amazon-ec2-instance-in-the-browser) 
 * log into your aws console and navigate to the ec2 service
 * launch a **linux ami instance** and ensure a public DNS or IP is available
 * save your api key in a known location
@@ -35,6 +36,16 @@ Host <name you will use to identify your connection>
     * note: you will need to ensure the cluster is running in your aws console 
 
 ### installing repo & dependencies
-* once connected to your instance, select "clone repository' in vs code to connect to your project 
+* for a more detailed description, [follow this guide from github](https://github.com/yafangy/Tutorial-using-Amazon-AWS-EC2-run-scripts-GitHub/tree/master#method-2-clone-git-to-ec2-instance-recommended) 
+* verify your ssh connection with github
+```
+ssh -T git@github.com
+``` 
+* once connected to your instance, select "clone repository' via https in vs code to connect to your project 
     * vs code will request authentication with github 
-    * note: your instance will likely come with python 2.7 preinstalled. it is possible there are instance dependencies on 2.7, so it is recommended you install an updated python version with 
+    * note: your instance will likely come with python 2.7 preinstalled. it is possible there are instance dependencies on 2.7, so it is recommended you install an updated python version within your virtual environment 
+    * firefox (as of the time of this writing) is not compatible with the vs code git connector; change your default browser if required 
+* set up your virtual environment using pipenv
+* list all your required packages in your requirements file
+* FIN
+
