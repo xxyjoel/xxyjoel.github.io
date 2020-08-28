@@ -122,14 +122,20 @@ I am going to use the [rocket theme](https://themesberg.com/product/bootstrap-th
 With the theme files stored in our static folder, our top level directory should look something like:
 ![directory_structure_main](/img/directory_structure_main.PNG)
 Changes to the settings file include the addition of template directory, and static files directory location(s). Ensure installed apps are updated correctly as well. 
-
+```
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+```
 When repurposing the templates assets (css, js, html, etc.) we need to (1) call 
 ```
-{% load static %}
+[% load static %] # French braces should be used in place of brackets... odd liquid tag error prevented me from using in md
 ``` 
 above the header and (2) locate the content and wrap it in 
 ```
-{% static 'some stuff' %}
+[% static 'some stuff' %]
 ```
 
 For example the following would go from 
