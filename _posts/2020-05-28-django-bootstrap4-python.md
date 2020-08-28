@@ -120,7 +120,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 ```
 When repurposing the templates assets (css, js, html, etc.) we need to (1) call 
 ```
-{% load static %}
+{% l-o-a-d static %}
 ``` 
 above the header and (2) locate the content called and wrap it in
 ```
