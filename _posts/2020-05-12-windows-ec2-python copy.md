@@ -33,19 +33,18 @@ Host <name you will use to identify your connection>
 ```
 * save your config file. hit ctrl + shift + P and search for ```remote ssh: connect to host```
 * you should now see your ```Host``` name specified in your config file listed as a potential option in your remote ssh connections 
-    * note: you will need to ensure the cluster is running in your aws console 
+    * note: you will need to ensure the cluster is running in your aws console
+* in vs code, select the "><" box in the lower left-hand corner
+* this will prompt you to connect to your ec2 using your recently configured config file
+* NOTE: if you used a private IP address, you will need a configured VPN with credentials specific to the security group designated to the ec2 instance you setup
 
 ### installing repo & dependencies
 * for a more detailed description, [follow this guide from github](https://github.com/yafangy/Tutorial-using-Amazon-AWS-EC2-run-scripts-GitHub/tree/master#method-2-clone-git-to-ec2-instance-recommended) 
-* verify your ssh connection with github
-```
-ssh -T git@github.com
-``` 
 * once connected to your instance, select "clone repository' via https in vs code to connect to your project 
     * vs code will request authentication with github 
     * note: your instance will likely come with python 2.7 preinstalled. it is possible there are instance dependencies on 2.7, so it is recommended you install an updated python version within your virtual environment 
     * firefox (as of the time of this writing) is not compatible with the vs code git connector; change your default browser if required 
 * set up your virtual environment using pipenv
-* list all your required packages in your requirements file
-* FIN
+* list all your (1) required packages in your requirements file and (2) your desired extensions 
+* if you are using vs code with the python extension, you can startup an interactive notebook (think jupyter) with a ``` # %%``` command
 
