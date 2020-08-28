@@ -109,9 +109,7 @@ At this point, we are assuming you have a basic understanding of (1) application
 I am going to use the [rocket theme](https://themesberg.com/product/bootstrap-themes/rocket-saas-bootstrap-template) from themeberg and they recommend using gulp. Given (1) this is a blog and (2) we want to get this up and running as quickly as possible (while learning about how it works) we are goingn to install the static files manually. 
 
 With the theme files stored in our static folder, our top level directory should look something like:
-
 ![directory_structure_main](/img/directory_structure_main.PNG)
-
 Changes to the settings file include the addition of template directory, and static files directory location(s). Ensure installed apps are updated correctly as well. 
 ```
 STATIC_URL = '/static/'
@@ -120,7 +118,11 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 ```
-When repurposing the templates assets (css, js, html, etc.) we need to (1) call ```{% load static %}``` above the header and (2) locate the content called and wrap it in
+When repurposing the templates assets (css, js, html, etc.) we need to (1) call 
+```
+{% load static %}
+``` 
+above the header and (2) locate the content called and wrap it in
 ```
 {% static 'some stuff' %}
 ```
