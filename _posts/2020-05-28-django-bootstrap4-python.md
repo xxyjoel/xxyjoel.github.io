@@ -111,25 +111,36 @@ At this point, we are assuming you have a basic understanding of (1) application
 I am going to use the [rocket theme](https://themesberg.com/product/bootstrap-themes/rocket-saas-bootstrap-template) from themeberg and they recommend using gulp. Given (1) this is a blog and (2) we want to get this up and running as quickly as possible (while learning about how it works) we are goingn to install the static files manually. 
 
 With the theme files stored in our static folder, our top level directory should look something like:
-```
-├── main
-    ├── content   # your app
-    ├── main      # your project name; where settings.py is located
-    ├── static    # your theme content 
-    ├── static_root # directory created when calling collectstatic
-    ├── templates # your html pages 
-    
-```
+
+![directory_structure_main](/img/directory_structure_main.PNG)
 
 Changes to the settings file include the addition of template directory, 
 ```
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 ```
-additional app in installed apps, and static files directory location(s). when repurposing the templates assets (css, js, html, etc.) we need to (1) call 
+additional app in installed apps, 
 ```
-{% load static %} 
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    #my_apps
+    'content',
+]
 ```
-above the header and (2) locate the content called and wrap it in
+
+and static files directory location(s).
+```
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+```
+When repurposing the templates assets (css, js, html, etc.) we need to (1) call ```{% load static %}``` above the header and (2) locate the content called and wrap it in
 ```
 "{% static 'some stuff' %}"
 ```
@@ -141,7 +152,11 @@ to
 ```
 a class="navbar-brand" href="{% static 'index.html' %}"
 ```
-note that we also had to remove the prefixed " ../ " from hrefs where we wanted static files pointed.
+note that we also had to remove the prefixed ```../``` from hrefs where we wanted static files pointed.
+
+applied template: 
+
+![website_boot_sample](/img/website_boot_sample.png) 
 
 NOTE: github pages does not seem to like much of the html-code-as-markdown, resulting in liquid tag errors... hence this post is not as verbose as originally desired 
 
