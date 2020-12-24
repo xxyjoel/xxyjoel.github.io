@@ -2,7 +2,12 @@
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name: AIM Consulting
   link: http://www.aimconsulting.com/
-  date: Jul 2019 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  date: Jul 2020 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  job: Principal Consultant
+
+- name: AIM Consulting
+  link: http://www.aimconsulting.com/
+  date: Jul 2019 - Jul 2020
   job: Lead Consultant
 
 - name: AIM Consulting
