@@ -76,7 +76,7 @@ del C:\Windows\System32\Drivers\BasicDisplay.sys
 
 15. install razer surround drivers for game sound
 16. install steam and youre good to go
-* as noted above, i ran into some serious performance issues with this method
+* as noted above, i ran into some serious performance issues with this method  
 
 ![Valhiem game](/img/valhiem-azure-vm.PNG)
 
