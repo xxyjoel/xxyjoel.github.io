@@ -78,6 +78,8 @@ del C:\Windows\System32\Drivers\BasicDisplay.sys
 16. install steam and youre good to go
 * as noted above, i ran into some serious performance issues with this method
 
+![Valhiem game](/img/valhiem-azure-vm.PNG)
+
 ## sources 
 * [wicked awesome azure guide](https://medium.com/azure-cloud/a-killer-guide-for-cloud-gaming-on-azure-march-2020-1aa56d13fba3)
 * [a slightly outdated aws post](https://medium.com/@bmatcuk/gaming-on-amazon-s-ec2-83b178f47a34)
